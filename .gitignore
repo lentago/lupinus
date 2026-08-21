@@ -6,3 +6,21 @@ node_modules/
 __pycache__/
 .venv/
 dist/
+
+# Obsidian: keep the shared settings (app.json), ignore per-machine state.
+# workspace.json records which panes YOU had open — it churns constantly and
+# conflicts on every pull if two people commit it.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/
+.obsidian/themes/
+
+# Your estate's own secrets never belong here — record WHERE a credential
+# lives, never the credential. These patterns are a backstop, not permission.
+*.env
+.env.*
+!.env.example
+secrets.yaml
+*.pem
+*.key
