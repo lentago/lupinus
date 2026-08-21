@@ -1,22 +1,15 @@
 # Architecture decision records
 
-The decisions below were reconstructed on 2026-08-13 from **this template repository's own**
-commit history, merged pull requests, and CLAUDE.md contents. Dates in each record reflect the
-original decision date, not the reconstruction date. Evidence anchors (PR numbers, file lines)
-have been verified against the current repo state; anything that could not be confirmed is marked
-uncertain.
-
-> **Scaffolding note — for repos created from this template:** ADRs 0001/0002 and their index
-> rows document the template repo itself, not your new repo. On setup (see `SETUP.md`), delete
-> those two records and their rows, keep this file as your repo's ADR log, and use the format
-> guide below for your own decisions.
+Decisions about how this guide is shaped and why. Records here are written at
+decision time unless a record says otherwise.
 
 ## Index
 
 | ADR | Title | Status | Date |
 |---|---|---|---|
-| [0001](0001-template-as-file-scaffold.md) | Template repo carries files; org settings are applied externally | Accepted | 2026-06-14 |
-| [0002](0002-governance-baked-in-structurally.md) | Template ships governance as structure, not convention | Accepted | 2026-06-14 |
+| [0001](0001-federated-hub-and-spoke.md) | The guide is a hub; runbooks live in the repos they operate | Accepted | 2026-08-19 |
+| [0002](0002-guide-repo-is-the-vault-template.md) | The guide repo is also the adopter's ops-vault template | Accepted | 2026-08-19 |
+| [0003](0003-drill-and-receipt.md) | Adoption runbooks are drills that end in a measured receipt | Accepted | 2026-08-19 |
 
 ---
 
@@ -54,3 +47,7 @@ time go in the list without special marking. Options added later for completenes
 explicitly labelled *"retrospective — not considered at the time"* so future readers know they
 were not part of the original deliberation. Honest assessment (worse / better / lateral) is
 required — do not present retrospective options as neutral.
+
+> **If you created a repo from this template:** these records document the
+> guide itself. You are welcome to keep them as background, or delete them and
+> start your own log — your estate's decisions are worth recording too.

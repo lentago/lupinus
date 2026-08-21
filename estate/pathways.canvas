@@ -1,0 +1,88 @@
+{
+	"nodes": [
+		{
+			"id": "how-to-use",
+			"type": "text",
+			"text": "## Start here\n\nThis is a **starter diagram** — replace every node below with your own.\n\nThe graph view shows *that* things are connected. This canvas shows *how*: each arrow carries a label naming the actual pathway.\n\n**To use it:** delete these example nodes, then drag notes in from `estate/products/` and `estate/accounts/` (Obsidian: drag from the file list onto the canvas). Draw an arrow between two nodes and give it a verb — \"deploys into\", \"ships logs to\", \"reads donations from\".\n\nThis is [JSON Canvas](https://jsoncanvas.org), an open format — plain JSON in your repository, readable without Obsidian.",
+			"x": -820,
+			"y": -260,
+			"width": 420,
+			"height": 400,
+			"color": "6"
+		},
+		{
+			"id": "example-label",
+			"type": "text",
+			"text": "### An example estate\n\n_(delete this whole cluster)_",
+			"x": -280,
+			"y": -300,
+			"width": 300,
+			"height": 80
+		},
+		{
+			"id": "campaign-site",
+			"type": "text",
+			"text": "**campaign site**\n\nstatic site, no backend",
+			"x": -280,
+			"y": -140,
+			"width": 260,
+			"height": 100,
+			"color": "4"
+		},
+		{
+			"id": "github",
+			"type": "text",
+			"text": "**GitHub org**\n\nrepos + build/deploy",
+			"x": -280,
+			"y": 60,
+			"width": 260,
+			"height": 100,
+			"color": "5"
+		},
+		{
+			"id": "processor",
+			"type": "text",
+			"text": "**payment processor**\n\nhosted donate page —\ncard data never touches\nanything we run",
+			"x": 140,
+			"y": -150,
+			"width": 260,
+			"height": 120,
+			"color": "5"
+		},
+		{
+			"id": "donor",
+			"type": "text",
+			"text": "**a donor**",
+			"x": 140,
+			"y": 60,
+			"width": 260,
+			"height": 60
+		}
+	],
+	"edges": [
+		{
+			"id": "e1",
+			"fromNode": "github",
+			"fromSide": "top",
+			"toNode": "campaign-site",
+			"toSide": "bottom",
+			"label": "builds and deploys"
+		},
+		{
+			"id": "e2",
+			"fromNode": "campaign-site",
+			"fromSide": "right",
+			"toNode": "processor",
+			"toSide": "left",
+			"label": "links out to"
+		},
+		{
+			"id": "e3",
+			"fromNode": "donor",
+			"fromSide": "top",
+			"toNode": "processor",
+			"toSide": "bottom",
+			"label": "pays"
+		}
+	]
+}
