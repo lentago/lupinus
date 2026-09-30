@@ -10,6 +10,7 @@ decision time unless a record says otherwise.
 | [0001](0001-federated-hub-and-spoke.md) | The guide is a hub; runbooks live in the repos they operate | Accepted | 2026-08-19 |
 | [0002](0002-guide-repo-is-the-vault-template.md) | The guide repo is also the adopter's ops-vault template | Accepted | 2026-08-19 |
 | [0003](0003-drill-and-receipt.md) | Adoption runbooks are drills that end in a measured receipt | Accepted | 2026-08-19 |
+| [0004](0004-one-guide-two-volumes.md) | One guide, two volumes — asclepias and lupinus share one voice | Accepted | 2026-09-30 |
 
 ---
 

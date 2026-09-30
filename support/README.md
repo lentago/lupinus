@@ -26,9 +26,11 @@ these documents get better.
 
 ## What is and is not promised
 
-These are public, MIT-licensed repositories maintained by a small practice. Best
-effort, no service-level agreement, no on-call. If you need a response time,
-that is an engagement, and it is a
+These are public, MIT-licensed repositories maintained by a small practice. Our
+help is pro bono — free for nonprofits and volunteer-run organizations. It's
+still best effort, though: no service-level agreement (no promise of how fast we
+answer), no on-call. If you need a response time you can count on, that's an
+engagement, and it's a
 [fireable retainer](https://github.com/lentago/.github/blob/main/docs/adr/0007-client-owned-delivery-no-multi-tenant-saas.md)
 rather than a subscription to something we run for you.
 
@@ -61,7 +63,7 @@ never the credentials themselves>
 ## Handover
 
 If the person who set all this up leaves, someone should be able to pick it up
-from this repository alone. That is worth testing before you need it: hand the
-repository to a colleague who did not build it and ask them to find out what you
-run, what it costs, and who to call. Whatever they cannot answer is the gap to
-fill next.
+from this repository alone. That's worth testing before you need it: hand the
+repository to someone who didn't build it and ask them to find out what you run,
+what it costs, and who to call. Whatever they can't answer is the gap to fill
+next.

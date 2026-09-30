@@ -7,7 +7,7 @@ What happened, when, and what you learned. Two kinds of entry:
 | [`receipts/`](receipts/README.md) | Records of adoption drills you ran |
 | [`incidents/`](incidents/README.md) | Records of things that broke |
 
-Both are append-only in spirit: you add entries, you do not tidy old ones. An
+Both are append-only in spirit: you add entries, you don't tidy old ones. An
 entry that turned out to be wrong gets a correction appended, not a rewrite —
 the wrong version is part of what happened.
 
@@ -40,7 +40,7 @@ maintain a list.
 
 The guide under [`guide/`](../guide/picker.md) is refreshed from upstream, so
 editing it locally means losing your edits. If you want to note that a step was
-confusing, or that something did not apply to you, write it here and link the
+confusing, or that something didn't apply to you, write it here and link the
 page:
 
 ```markdown

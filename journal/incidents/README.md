@@ -34,7 +34,7 @@ of your assumptions held, which is what lets you trust that part next time.
 
 ## Blame
 
-Write these so a colleague can read them without anyone looking bad. The useful
+Write these so anyone can read them without a person looking bad. The useful
 subject of an incident report is the system that allowed the mistake, not the
 person who made it — and reports written the other way stop getting written at
 all, quickly.

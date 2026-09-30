@@ -1,6 +1,6 @@
 # Templates
 
-Fill-in-the-blank starting points. Copy them; do not edit them in place.
+Fill-in-the-blank starting points. Copy them; don't edit them in place.
 
 | Template | Copy it to | Who uses it |
 |---|---|---|
@@ -10,10 +10,10 @@ Fill-in-the-blank starting points. Copy them; do not edit them in place.
 
 ## Why the ADOPTION template is so opinionated
 
-Because the sections that get dropped are always the same ones, and they are
-the ones adopters need most: the exhaustive prerequisites, the check beside
-every step, the teardown, and the receipt. The shape is argued in
-[ADR-0003](../docs/adr/0003-drill-and-receipt.md).
+Because the sections that get dropped are always the same ones, and they're the
+ones you need most when you're the one adopting: the exhaustive prerequisites,
+the check beside every step, the teardown, and the receipt. The shape is argued
+in [ADR-0003](../docs/adr/0003-drill-and-receipt.md).
 
 Two sections are load-bearing and easy to under-fill:
 

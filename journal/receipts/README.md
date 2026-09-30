@@ -3,7 +3,8 @@
 One entry per adoption drill you run. Name them `<product>-<YYYY-MM-DD>.md` and
 start from [the receipt template](../../templates/receipt.md).
 
-Fill it in the same day. A receipt written a week later is a guess.
+Fill it in the same day. A receipt written a week later is a guess, not a
+record.
 
 ## What makes a receipt useful
 
@@ -22,6 +23,6 @@ the most valuable issues a maintainer receives.
 
 ## Re-running
 
-Re-run a drill when the product has changed meaningfully, when you are about to
-teach someone else to do it, or when you are quoting the number to a funder.
+Re-run a drill when the product has changed meaningfully, when you're about to
+show someone else how to do it, or when you're quoting the number to a funder.
 Keep the old receipt and add a new one — the comparison is the point.

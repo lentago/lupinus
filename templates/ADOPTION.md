@@ -4,9 +4,9 @@
 
 # Adopting <product>
 
-<!-- One paragraph, addressed to the adopter as "you". What they end up with,
-     concretely. Name what it does NOT do — the fastest way to lose someone's
-     afternoon is to let them discover the boundary at step 9. -->
+<!-- One paragraph, written straight to the adopter as "you". What they end up
+     with, concretely. Name what it does NOT do — the fastest way to lose
+     someone's afternoon is to let them discover the boundary at step 9. -->
 
 **Status of this runbook:** <exercised on YYYY-MM-DD against <version/commit> |
 never run — see [Receipt](#receipt)>
@@ -95,9 +95,9 @@ worked. See [Troubleshooting](#troubleshooting).
 
 ## Receipt
 
-<!-- Filled in by whoever runs the drill. A blank table means UNEXERCISED and
-     the status line at the top must say so. Do not delete this section to
-     tidy it up — an empty receipt is information. -->
+<!-- Filled in by whoever runs the drill. A blank table means UNEXERCISED, and
+     the status line at the top must say so. Don't delete this section to tidy
+     it up — an empty receipt is information, and it's honest. -->
 
 | Field | Value |
 |---|---|

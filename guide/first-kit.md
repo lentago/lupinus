@@ -1,18 +1,22 @@
 # Your first kit
 
-A guided first run, start to finish, ending with something real on the internet.
+**What you're about to do:** stand up a real campaign site, start to finish, and
+end with something live on the internet that your organization owns outright.
 
-We use the campaign-site kit for this. Not because a campaign site is
-necessarily what you need — you may not need one at all — but because it is the
-shortest honest path through the whole shape: pick, intake, drill, receipt,
-own. Everything else here expects to be adopted the same way, so doing it once
-on the cheapest product makes the expensive ones familiar.
+**Why bother:** it's the shortest honest path through the whole shape every
+product here shares — pick, intake, drill, receipt, own. Do it once on the
+cheapest product and the expensive ones stop being intimidating, because they're
+adopted the same way. We use the campaign-site kit not because you necessarily
+need a campaign site — you may not need one at all — but because it's free and
+fast.
 
-**What it costs:** nothing. **What you need:** a GitHub account, about an hour,
-and a payment processor account if you want the donate button to actually work
-(you can finish without one).
+**Time:** about an hour, usually less.
 
-## What you are about to do
+**What it costs:** nothing. **What you need:** a GitHub account, and a payment
+processor account if you want the donate button to actually work (you can finish
+without one).
+
+## What happens, step by step
 
 1. Answer a one-page questionnaire about the campaign.
 2. Copy a template into your own GitHub organization.
@@ -25,20 +29,22 @@ Step 5 is the one people skip and the one that matters most. See
 
 ## Before you start
 
-- **A GitHub organization you control.** A personal account works. If your
-  organization has its own GitHub, use that — the point is that this lands in an
-  account you own.
-- **About an hour.** It is usually much less, but do not start this fifteen
-  minutes before a meeting; the slow steps are outside your control (DNS, a
-  build queue) and rushing them is how mistakes happen.
+- **A GitHub organization you control.** A personal account works fine. If your
+  org has its own GitHub, use that — the point is that this lands in an account
+  you own.
+- **About an hour.** Usually much less.
 - **Optional: a payment processor account.** The kit points at a processor's own
   hosted donate page or widget. It never touches card data — see the kit's own
   notes on why that boundary exists.
 
+> **Heads up.** Don't start this fifteen minutes before a meeting. The slow steps
+> are outside your control — DNS propagating, a build queue — and rushing them is
+> how mistakes creep in.
+
 ## Run it
 
-Everything from here is in the kit itself, because the kit is where it belongs
-— it travels with the code and stays correct as the code changes:
+Everything from here lives in the kit itself, because that's where it belongs —
+it travels with the code and stays correct as the code changes:
 
 1. **Read [monarda's adoption runbook](https://github.com/lentago/monarda/blob/main/ADOPTION.md).**
    Start at the prerequisites and work down. It is written for you, not for us.

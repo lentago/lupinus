@@ -1,9 +1,10 @@
 # Which of these fits my operation?
 
-Start from what you need, not from what we built. Each row names the product
-that covers it, what it will cost you per month, and how much of it you can
-stand up from the repository alone today — that last column is the
-[tier](tiers.md), and it is meant to be read as a warning label.
+Start from what you need, not from what we built. Each row below names the
+product that covers a need, what it'll cost you per month, and how much of it you
+can stand up from the repository alone today. That last column is the
+[tier](tiers.md) — read it as a warning label, because it's the honest measure of
+how much work is still on you.
 
 **Nothing here is hosted by us.** Everything you adopt runs in accounts you own,
 on infrastructure you control. See [conventions](conventions.md) for the
@@ -37,15 +38,15 @@ for why it works that way.
   whole. These are real systems built for one estate; what transfers is the
   approach, and each one says plainly what is worth taking.
 
-A Pattern is not a lesser product — it is an honest label. Several are the most
-interesting systems in the suite. They are simply not packaged for a stranger
+A Pattern is not a lesser product — it's an honest label. Several are the most
+interesting systems in the suite. They're simply not packaged for a stranger
 yet, and [tiers](tiers.md) tracks what would have to change.
 
-## If you are not sure where to start
+## If you're not sure where to start
 
-Start with [your first kit](first-kit.md). It is the campaign-site kit, it costs
+Start with [your first kit](first-kit.md). It's the campaign-site kit, it costs
 nothing, it needs no accounts beyond GitHub and a payment processor, and it ends
-with a live site. The point is less the site than the shape: you will have run a
+with a live site. The point is less the site than the shape: you'll have run a
 drill, recorded a receipt, and seen how everything else here expects to be
 adopted.
 
@@ -54,6 +55,6 @@ adopted.
 No product here collects donations directly, stores donor records, or processes
 payment cards — the campaign kit points at a payment processor's own hosted
 widget and never touches card data. None of them is a CRM, a case-management
-system, or an accounting package. If that is what you need, buy one; then use
-the [lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in)
+system, or an accounting package. If that's what you need, buy one; then use the
+[lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in)
 to check you can leave it later.

@@ -1,14 +1,15 @@
 # Tiers and the agnosticism scoreboard
 
-> **Reading this in your own copy of the guide?** This is the one page that
-> keeps changing. The live version is at
-> [lentago/lupinus](https://github.com/lentago/lupinus/blob/main/guide/tiers.md);
-> check it before concluding a product is still where this copy says it is.
+> **Heads up.** Reading this in your own copy of the guide? This is the one page
+> that keeps changing. The live version is at
+> [lentago/lupinus](https://github.com/lentago/lupinus/blob/main/guide/tiers.md) —
+> check it before you conclude a product is still where this copy says it is.
 
 Two things live on this page: how adoptable each product is today, and exactly
 what stands between it and being more adoptable. The second half is the point.
-Most of this suite was built for one estate, and saying so plainly — with the
-work items that would change it — is more useful than pretending otherwise.
+Most of this suite was built for our own estate, and saying so plainly — with the
+work items that would change it — is more useful to you than pretending
+otherwise.
 
 ## The tiers
 
@@ -55,11 +56,10 @@ keep the old name" is not an acceptable resolution:
 
 ## Why so many Patterns
 
-Because it is true today. The suite was built as one operator's working estate
-and published as it went; the parts that were designed from the start to land in
-someone else's accounts — the campaign kit, the workstation layer, the drills —
-are the parts that are Kits. Making the rest portable is ordinary work, and it is
-tracked above.
+Because it's true today. The suite was built as one operator's working estate and
+published as it went; the parts designed from the start to land in someone else's
+accounts — the campaign kit, the workstation layer, the drills — are the parts
+that are Kits. Making the rest portable is ordinary work, and it's tracked above.
 
-If you want a product moved up and it is stuck behind a tracked issue, say so on
+If you want a product moved up and it's stuck behind a tracked issue, say so on
 that issue. Knowing someone is waiting is the most useful thing you can tell us.
