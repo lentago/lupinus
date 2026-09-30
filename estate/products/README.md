@@ -14,7 +14,7 @@ A note here should answer, without anyone having to ask you:
 - How would we leave?
 
 That last one is worth filling in on the day you adopt, while leaving is still
-hypothetical. It is much harder to write honestly once you depend on something.
+hypothetical. It's much harder to write honestly once you depend on something.
 
 ## An example note
 

@@ -1,6 +1,6 @@
 # Your estate
 
-This is the half of the repository that is **yours**. The [guide](../guide/picker.md)
+This is the half of the repository that's **yours**. The [guide](../guide/picker.md)
 is ours and gets refreshed from upstream; everything under `estate/`,
 [`journal/`](../journal/README.md), and [`support/`](../support/README.md) is
 written by you and never overwritten.

@@ -21,11 +21,13 @@ hands an adopter one private repo carrying the guide *and* their ops vault.
 
 No build step; plain Markdown, GitHub-rendered, DeepWiki-indexed.
 
-**Not to be confused with [asclepias](https://github.com/lentago/asclepias)**,
-the field guide, which onboards *invited colleagues into Chris's live fleet*.
-Different audience, different voice, different repo — see
-[ADR-0001](docs/adr/0001-federated-hub-and-spoke.md). Link to asclepias for
-"learn the operating patterns"; never duplicate it.
+**Two volumes of one guide with [asclepias](https://github.com/lentago/asclepias)**,
+the field guide. asclepias is volume 1 — how our own estate works, try a change
+on ours first; lupinus is volume 2 — how to make it yours. One reader and one
+voice across both (see [ADR-0004](docs/adr/0004-one-guide-two-volumes.md), which
+amends the two-audiences premise in
+[ADR-0001](docs/adr/0001-federated-hub-and-spoke.md)). Link to asclepias for
+"see it working first"; never duplicate it.
 
 ## Artifacts / layout
 
@@ -42,10 +44,12 @@ Different audience, different voice, different repo — see
 
 ## Conventions to respect
 
-- **Voice: instructive, addressed to "you."** This is the deliberate deviation
-  from asclepias's collegial-never-instructive rule (its ADR-0004) — adopters
-  need runbooks that instruct. Decided 2026-08-19. Do not import asclepias's
-  voice convention here, and do not import this one there.
+- **Voice: follow the fleet voice guide.** All reader-facing prose here follows
+  `lentago/.github`'s [`docs/voice.md`](https://github.com/lentago/.github/blob/main/docs/voice.md)
+  — one reader (the one tech person), one voice across both volumes of the guide.
+  Where a guide page instructs, it instructs because the reader needs a runbook,
+  not because this repo has a voice of its own
+  ([ADR-0004](docs/adr/0004-one-guide-two-volumes.md)).
 - **Never copy a product's runbook into this repo.** Link it. The whole
   federation argument is that a runbook lives next to the code it operates
   ([ADR-0001](docs/adr/0001-federated-hub-and-spoke.md)). Cross-repo *sequences*

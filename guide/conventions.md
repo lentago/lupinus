@@ -1,7 +1,13 @@
 # Conventions
 
-The handful of things that are true for every product here. Each product's
-`ADOPTION.md` links back to this page rather than repeating it.
+**What this page is:** the handful of rules that hold for every product here, so
+each product's `ADOPTION.md` can link back to it instead of repeating them.
+
+**Why read it once:** these are the things that trip up an adoption in the same
+few ways every time — how to take a copy, what to do about our continuous
+integration (the automated checks that run on every change), where secrets go,
+and how to keep your links working. Ten minutes here saves you that same ten
+minutes on every product you adopt.
 
 ## Use the template button, not fork
 
@@ -44,8 +50,8 @@ ever contained a live credential:
 - The real file — the one with your values — is git-ignored. Copy the example,
   fill it in, and never commit it.
 
-If you find a product where the example file is missing or out of date, that is a
-bug worth reporting; it is the single most common way an adoption stalls.
+If you find a product where the example file is missing or out of date, that's a
+bug worth reporting; it's the single most common way an adoption stalls.
 
 ## Our CI references, and what to do about them
 
@@ -56,11 +62,13 @@ workflow definitions from our organization, like this:
 uses: lentago/shared-workflows/.github/workflows/docs-check.yml@v1.2.2
 ```
 
-In your copy that is a cross-organization dependency: it points at a repository
+In your copy that's a cross-organization dependency: it points at a repository
 you have no relationship with, and some of those workflows expect credentials
-(an AI provider key, for instance) that your organization will not have. Worse,
-if such a check is *required* on your default branch, a failure to run leaves
-pull requests unable to merge.
+(an AI provider key, for instance) that your organization won't have.
+
+> **Heads up.** If such a check is *required* on your default branch, a failure
+> to run leaves your pull requests unable to merge. Deal with these before you
+> turn on required checks, not after.
 
 Three options, in order of how much you care:
 
@@ -79,7 +87,7 @@ tier.
 
 ## Settings do not travel with files
 
-A template copy brings files. It does not bring branch protection, required
+A template copy brings files. It doesn't bring branch protection, required
 checks, labels, or merge settings — those are repository settings, and your new
 repo starts on GitHub's defaults.
 
@@ -93,10 +101,12 @@ gh api -X PUT repos/<YOUR_ORG>/<YOUR_REPO> \
 ```
 
 Then, in **Settings → Rules → Rulesets**, add a ruleset targeting your default
-branch that requires a pull request before merging. If you add required status
-checks, add them **only after** you have seen that check report on a real pull
-request — requiring a check that never runs will block every merge, and undoing
-it is a manual trip through the settings UI.
+branch that requires a pull request before merging.
+
+> **Heads up.** If you add required status checks, add them **only after** you've
+> seen that check report on a real pull request. Requiring a check that never
+> runs will block every merge, and undoing it is a manual trip through the
+> settings UI at the worst possible time.
 
 ## Write links the plain way
 

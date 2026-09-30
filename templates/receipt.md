@@ -24,7 +24,8 @@ Ran [<product>'s drill](<link to its ADOPTION.md>).
 
 <!-- The narrative. Where you deviated from the runbook, what you had to look
      up, what was confusing. Be specific about the bits that were annoying —
-     that is the useful part, and it is what the maintainer wants in an issue. -->
+     that's the useful part, and it's exactly what the maintainer wants in an
+     issue. -->
 
 ## What I would do differently
 

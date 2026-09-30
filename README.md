@@ -26,10 +26,13 @@ ability.
 
 ## This README has two readers. Jump to yours.
 
-### 👉 For adopters — you run a non-profit's technology
+### 👉 For adopters — you run a nonprofit's technology
 
-You are looking at a suite of infrastructure products and wondering whether any
-of it is worth your afternoon. Start here:
+You've got a suite of infrastructure in front of you and about an afternoon to
+decide whether any of it is worth your time. This half of the README is for you.
+Everything here is free to take, it runs in accounts you own, and each piece
+comes with a runbook — the step-by-step instructions for standing it up. Start
+here:
 
 | Question | Page |
 |---|---|
@@ -39,17 +42,22 @@ of it is worth your afternoon. Start here:
 | **What's true for everything here?** | [Conventions](guide/conventions.md) |
 | **Where are the runbooks?** | [Runbook index](guide/runbook-index.md) |
 
+**Want to see it working first?** Poke at our own estate before you commit to
+anything: that's [asclepias](https://github.com/lentago/asclepias), volume 1 of
+this guide, where you can try a change on live systems that nothing critical
+rides on. This repo is volume 2 — how to make it yours.
+
 **Then take this repository with you.** Click **Use this template** and you get
-a private copy carrying the guide *and* an [ops vault](estate/README.md) — a
+a private copy that carries the guide *and* an [ops vault](estate/README.md) — a
 place to record what you run, what it depends on, what it costs, and what
-happened when it broke. Open it in [Obsidian](https://obsidian.md) and the links
-between your notes render as a map of your estate; open it in anything else and
-it is still plain Markdown that works.
+happened the night it broke. Open it in [Obsidian](https://obsidian.md), a free
+notes app, and the links between your notes render as a map of your estate; open
+it in anything else and it's still plain Markdown that works.
 
 **Nothing here is hosted by us.** Everything you adopt runs in accounts you own.
-If you stop working with us, nothing about your systems changes — that promise
-is [written down](https://github.com/lentago/.github/blob/main/docs/adr/0007-client-owned-delivery-no-multi-tenant-saas.md)
-and this repository is what makes it operational.
+If you stop working with us, nothing about your systems changes — that promise is
+[written down](https://github.com/lentago/.github/blob/main/docs/adr/0007-client-owned-delivery-no-multi-tenant-saas.md),
+and this repository is what makes it real.
 
 ### 🔧 For maintainers — you publish a product in this suite
 
@@ -106,7 +114,8 @@ everything else is yours. See
 
 ---
 
-> 🌱 **Lentago Labs** is a practice building modern operations for
-> mission-driven organizations — production that shows up when the need does.
-> Start at the [org profile](https://github.com/lentago), or read this repo on
-> [DeepWiki](https://deepwiki.com/lentago/lupinus).
+> 🌱 **Lentago Labs** is a pro-bono operations practice for organizations that
+> run on volunteers, donations, and one overworked tech person. Everything here
+> is free to take, and we practice what we publish: our own estate runs this
+> way, in the open. Start at the [org profile](https://github.com/lentago), and
+> read this repo on [DeepWiki](https://deepwiki.com/lentago/lupinus).

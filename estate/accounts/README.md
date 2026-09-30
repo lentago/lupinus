@@ -44,5 +44,5 @@ just noise:
 
 Adding a back-link from an account to the products that use it is optional —
 Obsidian's backlink pane shows you the same thing automatically. Write it out
-anyway if you want it visible in plain GitHub, or for the benefit of colleagues
-who never open a vault.
+anyway if you want it visible in plain GitHub, or for the benefit of anyone
+helping you who never opens a vault.

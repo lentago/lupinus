@@ -1,13 +1,14 @@
 # Runbook index
 
-Every product's adoption runbook lives in that product's own repository, as an
-`ADOPTION.md` at its root. This page only points at them.
+Every product's adoption runbook — the step-by-step for standing it up — lives in
+that product's own repository, as an `ADOPTION.md` at its root. This page only
+points at them.
 
-That is deliberate. A runbook next to the code it operates gets reviewed when
-that code changes, ships with the repository when you clone it, and cannot drift
-into describing a version that no longer exists. A copy here would do none of
-those things. It also means you can adopt one product without ever reading this
-page.
+That's deliberate. A runbook that sits next to the code it operates gets reviewed
+when that code changes, ships with the repository when you clone it, and can't
+drift into describing a version that no longer exists. A copy here would do none
+of those things. It also means you can adopt one product without ever reading
+this page.
 
 ## Adoption runbooks
 
@@ -22,7 +23,7 @@ page.
 
 Rows without an `ADOPTION.md` yet point at the best existing document instead,
 and say so. As those runbooks are written, the links move and the tier column
-catches up — see [tiers](tiers.md) for what is in flight.
+catches up — see [tiers](tiers.md) for what's in flight.
 
 ## Sequences that span products
 
@@ -44,7 +45,7 @@ approach rather than adopting it whole.
 **Before you commit to any vendor**, including us: run the
 [lock-in review](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in).
 It takes an afternoon and is the single most useful thing on this page. We run it
-on ourselves and publish the result.
+on our own estate and publish the result.
 
 ## Operating runbooks, once you are running
 

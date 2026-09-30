@@ -13,9 +13,9 @@ review: <YYYY-MM-DD — when to look at this again>
 
 # <product> — <what it does for us, in your own words>
 
-<!-- One or two sentences. Write it for a colleague who has never heard of it,
-     or for yourself in eight months. Not marketing copy — what it actually
-     does here. -->
+<!-- One or two sentences. Write it for someone who has never heard of it, or
+     for yourself in eight months. Not marketing copy — what it actually does
+     here. -->
 
 ## Depends on
 
