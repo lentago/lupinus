@@ -41,6 +41,7 @@ here:
 | **Where do I actually start?** | [Your first kit](guide/first-kit.md) — free, about an hour |
 | **What's true for everything here?** | [Conventions](guide/conventions.md) |
 | **Where are the runbooks?** | [Runbook index](guide/runbook-index.md) |
+| **What does this look like for a shop like mine?** | [Five shops, one tech person each](guide/stories/README.md) — invented orgs, tagged claims |
 
 **Want to see it working first?** Poke at our own estate before you commit to
 anything: that's [asclepias](https://github.com/lentago/asclepias), volume 1 of
@@ -101,7 +102,7 @@ number. If the number is embarrassing, that is the useful case.
 
 | Path | Purpose |
 |---|---|
-| [`guide/`](guide/picker.md) | The adoption guide — picker, tiers, conventions, tutorial, runbook index |
+| [`guide/`](guide/picker.md) | The adoption guide — picker, tiers, conventions, tutorial, runbook index, stories |
 | [`estate/`](estate/README.md) | Your ops vault: what you run and what it depends on |
 | [`journal/`](journal/README.md) | Receipts and incident notes |
 | [`support/`](support/README.md) | Where to ask, and your own escalation path |
