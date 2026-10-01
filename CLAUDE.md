@@ -38,6 +38,7 @@ amends the two-audiences premise in
 | `guide/conventions.md` | Said once, linked everywhere: template-vs-fork, CI refs, secrets, links |
 | `guide/first-kit.md` | The tutorial — a guided first run via monarda |
 | `guide/runbook-index.md` | Federated index into each product's ADOPTION.md + cross-repo sequences |
+| `guide/stories/` | Five invented shops, each threading several products; every capability tagged Shipped / Free tier / Projected with a link. Orgs and people stay fictional; projected tags cite open issues only |
 | `estate/`, `journal/`, `support/` | The vault scaffold — **the adopter's**, not ours |
 | `templates/` | ADOPTION.md, component-card, receipt skeletons |
 | `docs/adr/` | Why the guide is shaped this way |
