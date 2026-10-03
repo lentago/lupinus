@@ -15,6 +15,7 @@ for why it works that way.
 
 | …do this | Adopt | Runs on | Cost/month | Tier |
 |---|---|---|---|---|
+| **Publish our public records and show, live, what was posted on time** — minutes, notices, bylaws, policies, with the posting rules next to them and a public "Is it posted?" board | [uvularia](https://github.com/lentago/uvularia) ([records template](https://github.com/lentago/uvularia-records-template) + [site template](https://github.com/lentago/uvularia-site-template)) | Your GitHub + your GitHub Pages | **$0** | Kit ([receipt](https://github.com/lentago/uvularia/blob/main/receipts/2026-10-03-agent-run.md), [live demo board](https://lentago.github.io/uvularia-demo-site/board/)) |
 | **Put up a campaign or fundraising site** my organization owns outright | [monarda](https://github.com/lentago/monarda) | Your GitHub Pages (or your S3/CloudFront) | **$0** on Pages | Kit |
 | **Set up a working laptop or VM** for whoever does your ops — same tools every time | [kalmia](https://github.com/lentago/kalmia) (the Ansible layer only) | Any Linux machine you already have | **$0** | Kit |
 | **Publish a status page** your staff and community can check | [drosera](https://github.com/lentago/drosera) (`status-page/`) | Your GitHub Pages | **$0** | Kit |
