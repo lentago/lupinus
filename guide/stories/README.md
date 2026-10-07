@@ -85,5 +85,4 @@ Two pieces these stories needed that had no issue until they were written, filed
 > 🌱 **Lentago Labs** is a pro-bono operations practice for organizations that
 > run on volunteers, donations, and one overworked tech person. Everything here
 > is free to take, and we practice what we publish: our own estate runs this
-> way, in the open. Start at the [org profile](https://github.com/lentago), and
-> read this repo on [DeepWiki](https://deepwiki.com/lentago/lupinus).
+> way, in the open. Start at the [org profile](https://github.com/lentago).

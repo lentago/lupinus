@@ -19,7 +19,7 @@ want to identify products, clone them into their own GitHub org, and stand them
 up in their own accounts. It is also a **template repo**: "Use this template"
 hands an adopter one private repo carrying the guide *and* their ops vault.
 
-No build step; plain Markdown, GitHub-rendered, DeepWiki-indexed.
+No build step; plain Markdown, GitHub-rendered.
 
 **Two volumes of one guide with [asclepias](https://github.com/lentago/asclepias)**,
 the field guide. asclepias is volume 1 — how our own estate works, try a change
