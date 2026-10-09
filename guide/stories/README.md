@@ -41,6 +41,7 @@ Shipped is **S**, free tier is **F**, projected is **P**. Blank means the story 
 | PR as change record / asclepias glossary | | S | | | S |
 | drosera dashboards and alerts | | S | S | | |
 | drosera status page / are-we-open #197 | | | S + P | P | |
+| uvularia records vault and board / Ask box #200 | | | S + P | | |
 | betula log capture | | S | S (client P) | | |
 | kalmia workstations / donated-hardware #107 | | S + P | | | |
 | epigaea / cold-chain kit #129 | | | S + P | | |
@@ -55,7 +56,6 @@ Shipped is **S**, free tier is **F**, projected is **P**. Blank means the story 
 | Insurance-Receipts Pack #125 | | P | | | |
 | Institutional Memory #126 | | P | | | |
 | AI-with-receipts #127 | | | | | P |
-| Ask-the-Records #128 | | | P | | |
 | Funder-report pipeline #130 | | P | | | P |
 | Privacy posture #131 | | | | | P |
 | Volunteer scheduling spike #132 | | | | P | |
@@ -70,11 +70,11 @@ If the goal is to develop hard, the stories vote. Counted by how many of the fiv
 | Projected piece | Stories | Why it ranks |
 |---|---|---|
 | Liberation Pipeline #123 | 4 | It is the exit itself. No shop leaves Salesforce safely without an owned, drilled export. Effort M on the roadmap. |
-| Good-Standing Kit #122 | 2 | The deadline calendar is the part of a CRM a tiny shop actually used. Already first in the offerings queue. |
+| Good-Standing Kit #122 | 2 | The deadline calendar is the part of a CRM a tiny shop actually used. The calendar itself already ships in uvularia; checking filings against the public registries is what remains. |
 | Digital Custody audit #124 | 2 | Effort S, impact high, and the theatre story is entirely this kit. The renewal-check workflow it builds on already runs. |
 | monarda dry-run receipt, monarda#5 | 3 | Not a new feature. Three stories lean on monarda and it has never been timed. Cheapest credibility in the fleet. |
 | mitchella M1 | 2 | One live API call turns "partial" into "shipped" in two stories. |
-| Funder-report pipeline #130 | 2 | The billable-change-request killer. Depends on the fact-base pattern that already runs on pondviewlane. |
+| Funder-report pipeline #130 | 2 | The billable-change-request killer. It reads the uvularia records vault, which ships today, as the vault's first consumer ([uvularia#92](https://github.com/lentago/uvularia/issues/92)). |
 | Cold-chain kit #129 | 1 | One story, but the most vivid one, and a month of catches on our own hardware is the receipt that sells it. |
 
 Two pieces these stories needed that had no issue until they were written, filed 2026-10-01:
