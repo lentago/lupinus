@@ -59,5 +59,4 @@ widget and never touches card data. None of them is a CRM, a case-management
 system, or an accounting package. If that's what you need, buy one; then use the
 [lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in)
 to check you can leave it later. Nor is any of it phones, printers, or Wi-Fi,
-which is where a good part of your week goes; we can point you at people who do
-those well.
+which is where a good part of your week goes.
