@@ -13,20 +13,81 @@ for why it works that way.
 
 ## I need to…
 
+Rows are grouped by the promise they keep, in the order the rest of the guide
+uses. Each row keeps the need in your words.
+
+## Your site and giving page
+
+| …do this | Adopt | Runs on | Cost/month | Tier |
+|---|---|---|---|---|
+| **Put up a campaign or fundraising site** my organization owns outright | [monarda](https://github.com/lentago/monarda) | Your GitHub Pages (or your S3/CloudFront) | **$0** on Pages | Kit |
+
+## Your records and your proof
+
 | …do this | Adopt | Runs on | Cost/month | Tier |
 |---|---|---|---|---|
 | **Publish our public records and show, live, what was posted on time** — minutes, notices, bylaws, policies, with the posting rules next to them and a public "Is it posted?" board | [uvularia](https://github.com/lentago/uvularia) ([records template](https://github.com/lentago/uvularia-records-template); one repository is the whole first rung, a [branded site](https://github.com/lentago/uvularia-site-template) is optional) | Your GitHub + your GitHub Pages | **$0** | Kit ([receipt](https://github.com/lentago/uvularia/blob/main/receipts/2026-10-12-agent-run-rung1.md), [live demo board](https://lentago.github.io/uvularia-demo-records/)) |
-| **Put up a campaign or fundraising site** my organization owns outright | [monarda](https://github.com/lentago/monarda) | Your GitHub Pages (or your S3/CloudFront) | **$0** on Pages | Kit |
+
+## Your machines and logins
+
+| …do this | Adopt | Runs on | Cost/month | Tier |
+|---|---|---|---|---|
 | **Set up a working laptop or VM** for whoever does your ops — same tools every time | [kalmia](https://github.com/lentago/kalmia) (the Ansible layer only) | Any Linux machine you already have | **$0** | Kit |
+
+## Your alarms and status
+
+| …do this | Adopt | Runs on | Cost/month | Tier |
+|---|---|---|---|---|
 | **Publish a status page** your staff and community can check | [drosera](https://github.com/lentago/drosera) (`status-page/`) | Your GitHub Pages | **$0** | Kit |
-| **Audit what you would lose** if a vendor disappeared, and prove your exits work | [the lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) | Nothing — it is a review you run | **$0** | Kit |
-| **Run a real AWS environment** you own: private networking, containers, a managed database, backups, alarms, budgets | [solidago](https://github.com/lentago/solidago) | Your AWS account + a domain you register | **~$130** ([teardown](https://github.com/lentago/solidago/blob/main/docs/RUNBOOK.md) drops it to ~$40) | Platform |
-| **Spin up a temporary Kubernetes cluster** for a specific job and destroy it the same day | [osmunda](https://github.com/lentago/osmunda) (`runbooks/`) | Your AWS account | **~$0.15/hour, while it exists** | Kit |
 | **See your servers and services** — dashboards, alerts, log search — without buying a monitoring product | [drosera](https://github.com/lentago/drosera) (full stack) | Your Grafana Cloud free tier | **$0** on the free tier | Pattern |
 | **Capture and keep logs** from a firewall or cloud service for longer than the vendor keeps them | [betula](https://github.com/lentago/betula) | Your log destination + the source device | Varies by destination | Pattern |
+
+## Your help desk and runbooks
+
+No row here yet. The front desk, mitchella, is a Pattern for now, not a kit
+you can stand up whole; its row in the [tier registry](tiers.md#where-each-product-stands)
+says what is still missing.
+
+## Your data and your exit
+
+| …do this | Adopt | Runs on | Cost/month | Tier |
+|---|---|---|---|---|
+| **Audit what you would lose** if a vendor disappeared, and prove your exits work | [the lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) | Nothing — it is a review you run | **$0** | Kit |
+
+For keeping logs from a firewall or cloud service, see the log-capture row under
+[your alarms and status](#your-alarms-and-status).
+
+## When you need them
+
+You may not need these three yet. Skip them until you need one.
+
+### Your building
+
+| …do this | Adopt | Runs on | Cost/month | Tier |
+|---|---|---|---|---|
 | **Monitor a physical space** — temperatures, doors, power — and act on what you see | [epigaea](https://github.com/lentago/epigaea) | A machine on-site + sensors | Hardware only | Pattern |
 | **Put a shared display** on a wall that shows what matters right now | [brasenia](https://github.com/lentago/brasenia) | A media host + a TV | Hardware only | Pattern |
+
+### Cloud you own
+
+| …do this | Adopt | Runs on | Cost/month | Tier |
+|---|---|---|---|---|
+| **Run a real AWS environment** you own: private networking, containers, a managed database, backups, alarms, budgets | [solidago](https://github.com/lentago/solidago) | Your AWS account + a domain you register | **~$130** ([teardown](https://github.com/lentago/solidago/blob/main/docs/RUNBOOK.md) drops it to ~$40) | Platform |
+| **Spin up a temporary Kubernetes cluster** for a specific job and destroy it the same day | [osmunda](https://github.com/lentago/osmunda) (`runbooks/`) | Your AWS account | **~$0.15/hour, while it exists** | Kit |
+
+### AI with receipts
+
+| …do this | Adopt | Runs on | Cost/month | Tier |
+|---|---|---|---|---|
 | **Have background agents do routine repo work** and open pull requests for review | [claytonia](https://github.com/lentago/claytonia) | Your own hardware + an AI provider account | Provider usage | Pattern |
+
+## The guide itself
+
+This one is the guide's scaffolding, not a promise: it keeps your own
+repositories consistent.
+
+| …do this | Adopt | Runs on | Cost/month | Tier |
+|---|---|---|---|---|
 | **Standardize your own repositories** — one CI definition, consistent settings | [shared-workflows](https://github.com/lentago/shared-workflows) + [repo-template](https://github.com/lentago/repo-template) | GitHub | **$0** | Platform |
 
 ## Reading the tier column
