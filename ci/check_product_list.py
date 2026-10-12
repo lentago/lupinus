@@ -5,13 +5,15 @@ The canonical list is the parts table in guide/stories/README.md, between the
 `<!-- parts:start -->` and `<!-- parts:end -->` markers. Each row names a part
 and links to where it lives; the link is the part's identity.
 
-Four pages enumerate products. Each is checked against the list:
+Three guide pages enumerate products. Each is checked against the list:
 
   guide/picker.md         every product it names is on the list
   guide/runbook-index.md  every product it names is on the list (a subset by design)
   guide/tiers.md          the above, and every part has a row, except the
                           guide's own spine rows, which are not tiered
-  support/README.md       the above, and every part has a row, spine included
+
+support/README.md is not checked: `support/` is the adopter's to edit, and a
+copy of this guide must not fail its own CI over rows its owner trimmed.
 
 A product is "named" by the lentago links in one column of a page's table (the
 column header is configured below). A row names no product on the list when
@@ -40,7 +42,6 @@ PAGES = {
     "guide/picker.md": ("Adopt", "none"),
     "guide/runbook-index.md": ("Runbook", "none"),
     "guide/tiers.md": ("Product", "promises"),
-    "support/README.md": ("Issues", "all"),
 }
 
 LINK_RE = re.compile(r"\]\((https://github\.com/lentago/[^)\s]+)\)")

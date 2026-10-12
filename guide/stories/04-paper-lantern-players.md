@@ -25,7 +25,7 @@ Opening night of the spring show. The website is down because the domain lapsed:
 
 ### This quarter
 
-**Your data and your exit.** Ownership insurance for the theatre's presence. *Projected:* the [Digital Custody audit](https://github.com/lentago/.github/issues/124): domain, DNS, site, and settings custody as code, plus an access register in git where every credential has a named steward and offboarding is a pull request. This is the whole story in one kit, and it is sized "effort S" on the roadmap.
+**Your data and your exit.** Ownership insurance for the theatre's presence. *Projected:* the [Digital Custody audit](https://github.com/lentago/.github/issues/124): domain, name records (DNS), site, and settings custody as code, plus an access register in git where every credential has a named steward and offboarding is a pull request. This is the whole story in one kit, and it is sized "effort S" on the roadmap.
 
 **Your site and giving page.** A campaign page per season, owned outright. *Shipped:* [monarda](https://github.com/lentago/monarda). Four productions a year means four campaign pages, each a copy of one config file, each on GitHub Pages for nothing, each pointing at the ticketing platform the theatre already likes.
 

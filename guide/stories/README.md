@@ -31,7 +31,7 @@ Smallest first.
 
 ## The map
 
-Every story uses the same map. The fleet's offer is six promises every shop needs, plus three for when you need them ([ADR-0012](https://github.com/lentago/.github/blob/main/docs/adr/0012-six-promises-codenames-are-parts.md)), in these words:
+Every story uses the same map. The fleet's offer is six promises every shop needs, plus three for when you need them (recorded in [ADR-0012](https://github.com/lentago/.github/blob/main/docs/adr/0012-six-promises-codenames-are-parts.md), an architecture decision record: the fleet's written-down reasons for a choice), in these words:
 
 - **Your site and giving page** — a campaign page you own outright, with a
   donate button that goes straight to your payment processor.
@@ -64,7 +64,7 @@ The guide is the spine, not a product: [asclepias](https://github.com/lentago/as
 
 Each product, the *part*, sits under exactly one promise. Its name is a codename (a plant's Latin name, the way every product here is named); its role says what it does in plain words. The tier, meaning how much of it you can stand up from the repository alone, lives only in the [tier registry](../tiers.md).
 
-This table is the canonical product list. The [picker](../picker.md), the [tier registry](../tiers.md), the [runbook index](../runbook-index.md) and the [support page](../../support/README.md) are checked against it on every pull request by [`ci/check_product_list.py`](../../ci/check_product_list.py): a product those pages name must be on this list, and every part here must have a row in the tier registry and on the support page. A new product starts here.
+This table is the canonical product list. The [picker](../picker.md), the [tier registry](../tiers.md) and the [runbook index](../runbook-index.md) are checked against it on every pull request by [`ci/check_product_list.py`](../../ci/check_product_list.py): a product those pages name must be on this list, and every part under a promise must have a row in the tier registry. A new product starts here.
 
 <!-- parts:start -->
 | Promise | Part | Role | Where it lives |
@@ -87,7 +87,7 @@ This table is the canonical product list. The [picker](../picker.md), the [tier 
 | The guide (spine) | shared-workflows | the checks every repository runs | [lentago/shared-workflows](https://github.com/lentago/shared-workflows) |
 <!-- parts:end -->
 
-The spine rows aren't tiered products, so the tier registry may skip them. The support page may not: if you read about it here, you need to know where to report a problem with it.
+The spine rows aren't tiered products, so the tier registry may skip them. The [support page](../../support/README.md) lists every part too, so you know where to report a problem with it, but that page is yours to edit in your copy, so the check leaves it alone.
 
 ## Coverage: which story needs which promise
 

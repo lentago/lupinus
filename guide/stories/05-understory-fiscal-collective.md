@@ -23,7 +23,7 @@ Grant season. Three projects' funder reports are due the same week, each wants n
 
 ### This weekend: $0, one repository
 
-**AI with receipts.** The AI policy is the running practice. *Projected:* [AI-with-receipts](https://github.com/lentago/.github/issues/127). The collective adopts the reviewed-merge model for documents first: one repository of its policies, where every change is a pull request a person reviews and merges. It derives a one-page policy from what it actually does, and answers the funder's question with links to merged PRs. *Shipped:* the fleet demonstrates this live; every agent PR in the open repos is a receipt.
+**AI with receipts.** The AI policy is the running practice. *Projected:* [AI-with-receipts](https://github.com/lentago/.github/issues/127). The collective adopts the reviewed-merge model for documents first: one repository of its policies, where every change is a pull request a person reviews and merges. It derives a one-page policy from what it actually does, and answers the funder's question with links to merged pull requests. *Shipped:* the fleet demonstrates this live; every agent PR in the open repos is a receipt.
 
 ### This quarter
 
