@@ -59,7 +59,7 @@ For keeping logs from a firewall or cloud service, see the log-capture row under
 
 ## When you need them
 
-These three are not every shop's week. Skip them until you do.
+You may not need these three yet. Skip them until you need one.
 
 ### Your building
 
