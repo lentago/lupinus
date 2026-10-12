@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640" role="img" aria-labelledby="map-title map-desc" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <title id="map-title">One map: six promises, three for when you need them</title>
+  <desc id="map-desc">Six promises every shop needs: your site and giving page, your records and your proof, your machines and logins, your alarms and status, your help desk and runbooks, your data and your exit. Three for when you need them: your building, cloud you own, AI with receipts. Below them, what is free and not ours. The guide runs down the side as the spine, and the pledge sits under everything.</desc>
+
+  <rect x="0" y="0" width="960" height="640" rx="12" fill="#ffffff"/>
+  <text x="100" y="42" font-size="22" font-weight="700" fill="#1f2d1f">One map: six promises, three for when you need them</text>
+
+  <!-- The spine: the guide -->
+  <rect x="20" y="70" width="64" height="450" rx="8" fill="#3d5a3d"/>
+  <text transform="translate(58 295) rotate(-90)" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">The guide is the spine · vol. 1 asclepias · vol. 2 lupinus</text>
+
+  <!-- Band 1: every shop needs -->
+  <text x="100" y="84" font-size="13" font-weight="700" fill="#3d5a3d" letter-spacing="1">EVERY SHOP NEEDS</text>
+  <g font-size="13" fill="#2b3a2b">
+    <rect x="100" y="95" width="270" height="95" rx="8" fill="#eef4ea" stroke="#9db894"/>
+    <text x="115" y="123" font-size="15" font-weight="700" fill="#1f2d1f">Your site and giving page</text>
+    <text x="115" y="148">monarda · campaign page</text>
+
+    <rect x="385" y="95" width="270" height="95" rx="8" fill="#eef4ea" stroke="#9db894"/>
+    <text x="400" y="123" font-size="15" font-weight="700" fill="#1f2d1f">Your records and your proof</text>
+    <text x="400" y="148">uvularia · records and deadlines</text>
+
+    <rect x="670" y="95" width="270" height="95" rx="8" fill="#eef4ea" stroke="#9db894"/>
+    <text x="685" y="123" font-size="15" font-weight="700" fill="#1f2d1f">Your machines and logins</text>
+    <text x="685" y="148">kalmia · machine setup</text>
+
+    <rect x="100" y="200" width="270" height="95" rx="8" fill="#eef4ea" stroke="#9db894"/>
+    <text x="115" y="228" font-size="15" font-weight="700" fill="#1f2d1f">Your alarms and status</text>
+    <text x="115" y="253">drosera · alerts and status</text>
+    <text x="115" y="273">betula · capture and keep</text>
+
+    <rect x="385" y="200" width="270" height="95" rx="8" fill="#eef4ea" stroke="#9db894"/>
+    <text x="400" y="228" font-size="15" font-weight="700" fill="#1f2d1f">Your help desk and runbooks</text>
+    <text x="400" y="253">mitchella · front desk</text>
+    <text x="400" y="273">your ops vault (lupinus)</text>
+
+    <rect x="670" y="200" width="270" height="95" rx="8" fill="#eef4ea" stroke="#9db894"/>
+    <text x="685" y="228" font-size="15" font-weight="700" fill="#1f2d1f">Your data and your exit</text>
+    <text x="685" y="253">lock-in ledger · what you'd lose</text>
+    <text x="685" y="273">exports: betula, under alarms</text>
+  </g>
+
+  <!-- Band 2: when you need them -->
+  <text x="100" y="324" font-size="13" font-weight="700" fill="#3d5a3d" letter-spacing="1">WHEN YOU NEED THEM</text>
+  <g font-size="13" fill="#2b3a2b">
+    <rect x="100" y="335" width="270" height="85" rx="8" fill="#f6f8f3" stroke="#9db894" stroke-dasharray="6 4"/>
+    <text x="115" y="363" font-size="15" font-weight="700" fill="#1f2d1f">Your building</text>
+    <text x="115" y="388">epigaea · building sensors</text>
+    <text x="115" y="408">brasenia · lobby screen</text>
+
+    <rect x="385" y="335" width="270" height="85" rx="8" fill="#f6f8f3" stroke="#9db894" stroke-dasharray="6 4"/>
+    <text x="400" y="363" font-size="15" font-weight="700" fill="#1f2d1f">Cloud you own</text>
+    <text x="400" y="388">solidago · osmunda</text>
+
+    <rect x="670" y="335" width="270" height="85" rx="8" fill="#f6f8f3" stroke="#9db894" stroke-dasharray="6 4"/>
+    <text x="685" y="363" font-size="15" font-weight="700" fill="#1f2d1f">AI with receipts</text>
+    <text x="685" y="388">claytonia · agents that open</text>
+    <text x="685" y="408">pull requests and never merge</text>
+  </g>
+
+  <!-- Band 3: free, and not ours -->
+  <text x="100" y="448" font-size="13" font-weight="700" fill="#3d5a3d" letter-spacing="1">FREE, AND NOT OURS</text>
+  <rect x="100" y="458" width="840" height="62" rx="8" fill="#ffffff" stroke="#b9c7b4"/>
+  <text x="115" y="483" font-size="13" fill="#2b3a2b">A free GitHub organization · Grafana Cloud's free tier · a payment processor's hosted page ·</text>
+  <text x="115" y="503" font-size="13" fill="#2b3a2b">the nonprofit tiers of Google Workspace and Microsoft 365 · Apple Business · Slack for Nonprofits</text>
+
+  <!-- The pledge, under all -->
+  <rect x="20" y="540" width="920" height="80" rx="8" fill="#1f2d1f"/>
+  <text x="40" y="572" font-size="15" fill="#ffffff"><tspan font-weight="700">The pledge</tspan> — We will never host your systems for you. You'll own every piece,</text>
+  <text x="40" y="597" font-size="15" fill="#ffffff">we'll show your people how to run it, and firing us is a runbook.</text>
+</svg>

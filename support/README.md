@@ -11,13 +11,26 @@ value that could not be swapped, a prerequisite that was missing.
 
 | Product | Issues |
 |---|---|
-| Campaign-site kit | [lentago/monarda](https://github.com/lentago/monarda/issues) |
-| AWS platform | [lentago/solidago](https://github.com/lentago/solidago/issues) |
-| Provisioning | [lentago/kalmia](https://github.com/lentago/kalmia/issues) |
-| Observability | [lentago/drosera](https://github.com/lentago/drosera/issues) |
+| Campaign page | [lentago/monarda](https://github.com/lentago/monarda/issues) |
+| Records vault and deadlines | [lentago/uvularia](https://github.com/lentago/uvularia/issues) |
+| Machine setup | [lentago/kalmia](https://github.com/lentago/kalmia/issues) |
+| Alerts, dashboards, and status page | [lentago/drosera](https://github.com/lentago/drosera/issues) |
 | Log capture | [lentago/betula](https://github.com/lentago/betula/issues) |
+| Front desk | [lentago/mitchella](https://github.com/lentago/mitchella/issues) |
+| Lock-in ledger | [lentago/.github](https://github.com/lentago/.github/issues), which hosts [the lock-in kit](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) |
+| Building sensors | [lentago/epigaea](https://github.com/lentago/epigaea/issues) |
+| Lobby screen | [lentago/brasenia](https://github.com/lentago/brasenia/issues) |
+| AWS platform | [lentago/solidago](https://github.com/lentago/solidago/issues) |
 | Kubernetes platform | [lentago/osmunda](https://github.com/lentago/osmunda/issues) |
+| Agent fleet | [lentago/claytonia](https://github.com/lentago/claytonia/issues) |
+| Repository starter | [lentago/repo-template](https://github.com/lentago/repo-template/issues) |
+| Shared CI checks | [lentago/shared-workflows](https://github.com/lentago/shared-workflows/issues) |
+| The guide, volume 1 | [lentago/asclepias](https://github.com/lentago/asclepias/issues) |
 | This guide | [lentago/lupinus](https://github.com/lentago/lupinus/issues) |
+
+The list follows the
+[canonical product list](../guide/stories/README.md#the-parts), so a product
+you meet anywhere in the guide has a row here.
 
 **What to include:** the step you were on, the exact command, the full output,
 and your platform. If a runbook was wrong, unclear, or missing something, say

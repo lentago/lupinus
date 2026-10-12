@@ -19,15 +19,33 @@ Grant season. Three projects' funder reports are due the same week, each wants n
 
 ## The path out
 
-1. **Every project gets the same starter kit.** *Shipped:* [repo-template](https://github.com/lentago/repo-template) and [shared-workflows](https://github.com/lentago/shared-workflows) mean a new project's repo starts with the checks, labels, and templates already in place, which is the same mechanism that keeps the fleet's own twenty repos aligned. *Projected:* [Ops-in-a-Box](https://github.com/lentago/.github/issues/133), the miniature estate starter: fork, bootstrap, first PR, break it, read your own dashboard, write your first post-mortem. This is the onboarding for each project's volunteer, and it becomes the guide's Lab 05.
-2. **Fifteen sites become fifteen copies of one config.** *Shipped:* [monarda](https://github.com/lentago/monarda), on GitHub Pages, in the collective's one GitHub organization with a repo per project. Fifteen subscriptions become zero. *Projected:* the [Digital Custody audit](https://github.com/lentago/.github/issues/124) consolidates the fifteen domains under the collective with a named steward each.
-3. **The help desk is issue forms, and the chores get done by agents.** *Free tier:* GitHub Issues across fifteen repos, one project board (*projected* as a starter: [.github#196](https://github.com/lentago/.github/issues/196)). *Shipped:* [claytonia](https://github.com/lentago/claytonia), a fleet of agents that pick up routine repo chores from a shared queue and open pull requests that a human must merge, with per-job cost and duration on a dashboard. The nineteen "you've answered this before" tickets become jobs Jun dispatches and reviews instead of work Jun does by hand. *Honest status:* claytonia's [never-merge rule](https://github.com/lentago/claytonia/issues/117) is practice, not yet an enforced required check.
-4. **One front desk for fifteen projects.** *Shipped, partially:* [mitchella](https://github.com/lentago/mitchella), answering from the collective's own runbooks and routing the rest to Jun. *Heads up on the bright line:* [ADR-0007](https://github.com/lentago/.github/blob/main/docs/adr/0007-client-owned-delivery-no-multi-tenant-saas.md) forbids multi-tenant services we operate. A fiscal sponsor is one legal entity and its projects are its own programs, so a desk the collective runs is inside the line. Lentago is a fireable maintainer of it, never the operator.
-5. **The funder reports come from one fact base.** *Projected:* the [funder-report fact pipeline](https://github.com/lentago/.github/issues/130). Each project commits its program numbers once; the annual report, each funder's format, and the board deck cite the same facts. Agents draft the narrative, humans merge. The agency's billable change requests end here.
-6. **The AI policy is the running practice.** *Projected:* [AI-with-receipts](https://github.com/lentago/.github/issues/127). The collective adopts the reviewed-merge model for documents first, derives a one-page policy from what it actually does, and answers the funder's question with links to merged PRs. *Shipped:* the fleet demonstrates this live; every agent PR in the open repos is a receipt.
-7. **The donor data gets out of Salesforce intact.** *Projected:* the [Liberation Pipeline](https://github.com/lentago/.github/issues/123), fifteen sources, fifteen owned exports, restore drills on the game-day cadence. Adding a project never touches another project's collector. The collective leaves Salesforce when the restore drill passes, not before.
-8. **Shared tools on hardware the collective owns.** *Shipped:* [osmunda](https://github.com/lentago/osmunda), a small standing Kubernetes cluster reconciled from git, plus a temporary cloud cluster with a hard cost gate ([21 minutes meter-on to meter-off, about five cents](https://github.com/lentago/osmunda/blob/main/runbooks/eks-up.md)). *Honest status:* the n8n workflow engine that would glue the collectors together is a [pre-cutover draft](https://github.com/lentago/osmunda/tree/main/apps/n8n) on osmunda and still runs on a lone container at home.
-9. **Privacy posture, because several states now reach nonprofits.** *Projected:* the [privacy posture kit](https://github.com/lentago/.github/issues/131), a data map, minimization, and retention as code. Engineering and posture; counsel does law.
+**The spine: AI with receipts.** While we're in there: your help desk and runbooks, and your records and your proof. Each step is one promise from [the map](README.md#the-map); the product names live inside the tags.
+
+### This weekend: $0, one repository
+
+**AI with receipts.** The AI policy is the running practice. *Projected:* [AI-with-receipts](https://github.com/lentago/.github/issues/127). The collective adopts the reviewed-merge model for documents first: one repository of its policies, where every change is a pull request a person reviews and merges. It derives a one-page policy from what it actually does, and answers the funder's question with links to merged pull requests. *Shipped:* the fleet demonstrates this live; every agent PR in the open repos is a receipt.
+
+### This quarter
+
+**Your help desk and runbooks.** The help desk is issue forms. *Free tier:* GitHub Issues across fifteen repos, one project board (*projected* as a starter: [.github#196](https://github.com/lentago/.github/issues/196)).
+
+**AI with receipts.** The chores get done by agents. *Shipped:* [claytonia](https://github.com/lentago/claytonia), a fleet of agents that pick up routine repo chores from a shared queue and open pull requests that a human must merge, with per-job cost and duration on a dashboard. The nineteen "you've answered this before" tickets become jobs Jun dispatches and reviews instead of work Jun does by hand. *Honest status:* the agent fleet's [never-merge rule](https://github.com/lentago/claytonia/issues/117) is practice, not yet an enforced required check.
+
+**Your help desk and runbooks, the front desk.** One front desk for fifteen projects. *Shipped, partially:* [mitchella](https://github.com/lentago/mitchella), answering from the collective's own runbooks and routing the rest to Jun. *Heads up on the bright line:* [ADR-0007](https://github.com/lentago/.github/blob/main/docs/adr/0007-client-owned-delivery-no-multi-tenant-saas.md) forbids multi-tenant services we operate (one service we run for many customers at once). A fiscal sponsor is one legal entity and its projects are its own programs, so a desk the collective runs is inside the line. Lentago is a fireable maintainer of it, never the operator.
+
+### This year
+
+**Your records and your proof.** The funder reports come from one fact base. *Projected:* the [funder-report fact pipeline](https://github.com/lentago/.github/issues/130). Each project commits its program numbers once; the annual report, each funder's format, and the board deck cite the same facts. Agents draft the narrative, humans merge. The agency's billable change requests end here.
+
+### Also on the map, when there's time
+
+**The guide: every project gets the same starter kit.** *Shipped:* [repo-template](https://github.com/lentago/repo-template) and [shared-workflows](https://github.com/lentago/shared-workflows) mean a new project's repo starts with the checks, labels, and templates already in place, which is the same mechanism that keeps the fleet's own twenty repos aligned. *Projected:* [Ops-in-a-Box](https://github.com/lentago/.github/issues/133), the miniature estate starter: fork, bootstrap, first PR, break it, read your own dashboard, write your first post-mortem. This is the onboarding for each project's volunteer, and it becomes the guide's Lab 05.
+
+**Your site and giving page.** Fifteen sites become fifteen copies of one config. *Shipped:* [monarda](https://github.com/lentago/monarda), on GitHub Pages, in the collective's one GitHub organization with a repo per project. Fifteen subscriptions become zero. *Projected:* the [Digital Custody audit](https://github.com/lentago/.github/issues/124) consolidates the fifteen domains under the collective with a named steward each.
+
+**Your data and your exit.** The donor data gets out of Salesforce intact. *Projected:* the [Liberation Pipeline](https://github.com/lentago/.github/issues/123), fifteen sources, fifteen owned exports, restore drills on the game-day cadence. Adding a project never touches another project's collector. The collective leaves Salesforce when the restore drill passes, not before. And privacy posture, because several states' privacy laws now reach nonprofits. *Projected:* the [privacy posture kit](https://github.com/lentago/.github/issues/131), a data map, minimization, and retention as code. Engineering and posture; counsel does law.
+
+**Cloud you own.** Shared tools on hardware the collective owns. *Shipped:* [osmunda](https://github.com/lentago/osmunda), a small standing Kubernetes cluster (a group of machines that run containers together) reconciled from git, plus a temporary cloud cluster with a hard cost gate ([21 minutes meter-on to meter-off, about five cents](https://github.com/lentago/osmunda/blob/main/runbooks/eks-up.md)). *Honest status:* the n8n workflow engine that would glue the collectors together is a [pre-cutover draft](https://github.com/lentago/osmunda/tree/main/apps/n8n) on that cluster and still runs on a lone container at home.
 
 ## What got kicked to the curb
 
@@ -37,6 +55,7 @@ Grant season. Three projects' funder reports are due the same week, each wants n
 | ServiceNow help desk, one agent | Issue forms, a board, and agents doing the repeat work. *Free tier* plus *shipped*. |
 | Fifteen website subscriptions on fifteen cards | Fifteen repos, one org, $0. *Shipped.* |
 | The AI-policy PDF | A policy derived from merged PRs. *Projected.* |
+| The fund-accounting package | **Kept, on purpose.** Fiscal sponsorship is an accounting job, and the collective's books stay in the package built for it. Nothing here does accounting. |
 
 ## The fire-us test
 

@@ -18,12 +18,23 @@ The drive opens Saturday with a hand-written "donate at the door" sign.
 
 ## The path out
 
-1. **One page for the drive, in the pantry's own GitHub account.** *Shipped:* [monarda](https://github.com/lentago/monarda), the campaign-site kit. Marta fills in the [intake questionnaire](https://github.com/lentago/monarda/blob/main/INTAKE.md), edits one config file, and GitHub Pages serves it for nothing. The donate button points at the processor's own hosted page, so no card data ever touches the site ([ADR-0002](https://github.com/lentago/monarda/blob/main/docs/adr/0002-processor-hosted-payments-only.md)). *Heads up:* the [timed dry-run](https://github.com/lentago/monarda/blob/main/DRY-RUN.md) was run once, on 2026-10-12: **3 min 01 s** for an operator who had the intake ready ([receipt](https://github.com/lentago/monarda/blob/main/receipts/2026-10-12-agent-run.md)). A first-timer's number is still to come; we'd run it with Marta and record hers.
-2. **The donor list lives where the money lands.** *Free tier:* the processor (Givebutter, Zeffy, and others) already keeps every donor and every gift, and exports it. That is the "CRM" the pantry was actually using Salesforce for.
-3. **A copy they own, forever.** *Projected:* the [Liberation Pipeline](https://github.com/lentago/.github/issues/123) exports the processor's donor data and the mailing list on a schedule into storage the pantry owns, in open formats, with a restore drill so the copy is proven rather than hoped. This is the piece that makes "leaving Salesforce" safe: nothing is lost on the way out.
-4. **The deadlines stop living in one person's head.** *Projected:* the [Good-Standing Kit](https://github.com/lentago/.github/issues/122) turns the 990-N, the state charities filing, and the annual report into GitHub Issues that open themselves before the due date, with the filed copy committed as the receipt.
-5. **A place to write down how the pantry's tech works.** *Shipped:* the [lupinus ops vault](https://github.com/lentago/lupinus), a plain-folder notebook that opens in Obsidian or any text editor, in the pantry's own private repo. When somebody younger shows up, the first thing they read is Marta's notes.
-6. **Someone to call, if she needs to.** *Shipped:* [support, pro bono](https://github.com/lentago/lupinus/blob/main/support/README.md). Best effort, no on-call, free for a food pantry.
+**The spine: your site and giving page.** While we're in there: your records and your proof, and your data and your exit. Each step is one promise from [the map](README.md#the-map); the product names live inside the tags.
+
+### This weekend: $0, one repository
+
+**Your site and giving page.** One campaign page for the drive, on the pantry's own GitHub Pages, with the processor's donate link. Marta fills in the [intake questionnaire](https://github.com/lentago/monarda/blob/main/INTAKE.md), edits one config file, and GitHub Pages serves it for nothing. The donate button points at the processor's own hosted page, so no card data ever touches the site ([ADR-0002](https://github.com/lentago/monarda/blob/main/docs/adr/0002-processor-hosted-payments-only.md)). *Shipped:* [monarda](https://github.com/lentago/monarda), the campaign-site kit. *Free tier:* the processor's hosted page. *Heads up:* the [timed dry-run](https://github.com/lentago/monarda/blob/main/DRY-RUN.md) was run once, on 2026-10-12: **3 min 01 s** for an operator who had the intake ready ([receipt](https://github.com/lentago/monarda/blob/main/receipts/2026-10-12-agent-run.md)). A first-timer's number is still to come; we'd run it with Marta and record hers.
+
+### This quarter
+
+**Your records and your proof.** The deadlines the consultant's CRM was really for (the 990-N, the state charities filing, the annual report) stop living in one person's head. They go into a records vault as rules, and a public board shows what was filed and when. *Shipped:* [uvularia](https://github.com/lentago/uvularia), the records vault and its "Is it posted?" board. *Projected:* the [Good-Standing Kit](https://github.com/lentago/.github/issues/122) turns those deadlines into GitHub Issues that open themselves before the due date, with the filed copy committed as the receipt.
+
+### This year
+
+**Your data and your exit.** The donor list lives where the money lands. *Free tier:* the processor (Givebutter, Zeffy, and others) already keeps every donor and every gift, and exports it. That is the "CRM" the pantry was actually using Salesforce for. *Projected:* the [Liberation Pipeline](https://github.com/lentago/.github/issues/123) exports the processor's donor data and the mailing list on a schedule into storage the pantry owns, in open formats, with a restore drill so the copy is proven rather than hoped. This is the piece that makes "leaving Salesforce" safe: nothing is lost on the way out.
+
+### Also on the map, when there's time
+
+**Your help desk and runbooks.** A place to write down how the pantry's tech works. *Shipped:* the [lupinus ops vault](https://github.com/lentago/lupinus), a plain-folder notebook that opens in Obsidian or any text editor, in the pantry's own private repo. When somebody younger shows up, the first thing they read is Marta's notes. And someone to call, if she needs to: *Shipped:* [support, pro bono](https://github.com/lentago/lupinus/blob/main/support/README.md). Best effort, no on-call, free for a food pantry.
 
 ## What got kicked to the curb
 
@@ -33,6 +44,7 @@ The drive opens Saturday with a hand-written "donate at the door" sign.
 | Website builder subscription | GitHub Pages, $0. |
 | Mailing-list paid tier | Still paid, for now. Honest answer: the free tiers cap contacts, and the pantry is over the cap. *Projected:* the Liberation Pipeline at least guarantees the list is theirs to move. |
 | The nephew | A runbook. |
+| The treasurer's accounting package | **Kept, on purpose.** Nothing here does bookkeeping, and the pantry doesn't need it to. The books stay where the treasurer keeps them. |
 
 ## The fire-us test
 

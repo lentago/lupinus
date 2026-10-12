@@ -17,12 +17,29 @@ Opening night of the spring show. The website is down because the domain lapsed:
 
 ## The path out
 
-1. **Ownership insurance for the theatre's presence.** *Projected:* the [Digital Custody audit](https://github.com/lentago/.github/issues/124): domain, DNS, site, and settings custody as code, plus an access register in git where every credential has a named steward and offboarding is a pull request. This is the whole story in one kit, and it is sized "effort S" on the roadmap. *Shipped already:* the fleet's own [renewal calendar](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) checks daily and opens an issue before a domain or certificate lapses. The theatre gets the same workflow in its own repo.
-2. **A campaign page per season, owned outright.** *Shipped:* [monarda](https://github.com/lentago/monarda). Four productions a year means four campaign pages, each a copy of one config file, each on GitHub Pages for nothing, each pointing at the ticketing platform the theatre already likes.
-3. **Patrons live where the tickets are sold.** *Free tier:* the ticketing platform already knows every patron and every seat, and exports. Salesforce was a second copy nobody updated. *Projected:* the [Liberation Pipeline](https://github.com/lentago/.github/issues/123) keeps that export in the theatre's own storage, so the patron list survives a change of platform.
-4. **Volunteer shifts.** *Projected, and deliberately only a spike:* [.github#132](https://github.com/lentago/.github/issues/132), "evaluate, don't build," a two-evening look at free-tier scheduling tools against a volunteer-org needs profile, ending in a memo that says integrate, build, or decline. We don't build a scheduling app on a hunch.
-5. **Filing deadlines as issues.** *Projected:* the [Good-Standing Kit](https://github.com/lentago/.github/issues/122). The 990, the state charities filing, the annual report, and the event permits open themselves as issues with the filed copy committed as the receipt. Theo is a bookkeeper; this is the part he will love.
-6. **The snow-day banner.** *Projected:* [drosera#197](https://github.com/lentago/drosera/issues/197), one "are we open" source of truth. Show cancelled for weather is a one-line change that updates the site, the status page, and the listing.
+**The spine: your data and your exit**, in its custody sense: the theatre owns its name, its site, and its patron list, and knows who holds each key. While we're in there: your site and giving page, and your records and your proof. Each step is one promise from [the map](README.md#the-map); the product names live inside the tags.
+
+### This weekend: $0, one repository
+
+**Your data and your exit.** Nothing lapses unnoticed again. *Shipped:* the fleet's own [renewal calendar](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) checks daily and opens an issue before a domain or certificate lapses. The theatre gets the same workflow in its own repo, and the renewal email stops depending on someone's spam folder.
+
+### This quarter
+
+**Your data and your exit.** Ownership insurance for the theatre's presence. *Projected:* the [Digital Custody audit](https://github.com/lentago/.github/issues/124): domain, name records (DNS), site, and settings custody as code, plus an access register in git where every credential has a named steward and offboarding is a pull request. This is the whole story in one kit, and it is sized "effort S" on the roadmap.
+
+**Your site and giving page.** A campaign page per season, owned outright. *Shipped:* [monarda](https://github.com/lentago/monarda). Four productions a year means four campaign pages, each a copy of one config file, each on GitHub Pages for nothing, each pointing at the ticketing platform the theatre already likes.
+
+### This year
+
+**Your data and your exit.** Patrons live where the tickets are sold. *Free tier:* the ticketing platform already knows every patron and every seat, and exports. Salesforce was a second copy nobody updated. *Projected:* the [Liberation Pipeline](https://github.com/lentago/.github/issues/123) keeps that export in the theatre's own storage, so the patron list survives a change of platform.
+
+**Your records and your proof.** Filing deadlines as issues. *Projected:* the [Good-Standing Kit](https://github.com/lentago/.github/issues/122). The 990, the state charities filing, the annual report, and the event permits open themselves as issues with the filed copy committed as the receipt. Theo is a bookkeeper; this is the part he will love.
+
+### Also on the map, when there's time
+
+**Your alarms and status.** The snow-day banner. *Projected:* [drosera#197](https://github.com/lentago/drosera/issues/197), one "are we open" source of truth. Show cancelled for weather is a one-line change that updates the site, the status page, and the listing.
+
+**Not on the map, on purpose: volunteer shifts.** *Projected, and deliberately only a spike:* [.github#132](https://github.com/lentago/.github/issues/132), "evaluate, don't build," a two-evening look at free-tier scheduling tools against a volunteer-org needs profile, ending in a memo that says integrate, build, or decline. We don't build a scheduling app on a hunch.
 
 ## What got kicked to the curb
 
@@ -32,6 +49,7 @@ Opening night of the spring show. The website is down because the domain lapsed:
 | Domain on a former volunteer's account | Transferred to the theatre, with a steward named in the access register. *Projected* kit, *shipped* renewal-check workflow. |
 | Scheduling app paid tier | Decided by a memo, not a renewal notice. |
 | The renewal email in someone's spam | An issue that opens itself thirty days early. |
+| The accounting package | **Kept, on purpose.** Theo keeps the books in the package he already knows. Nothing here does accounting, and the ticketing platform stays too. |
 
 ## The fire-us test
 
