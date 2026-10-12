@@ -23,7 +23,7 @@ otherwise.
 
 | Product | Tier | Receipt | What would move it up |
 |---|---|---|---|
-| [monarda](https://github.com/lentago/monarda) — campaign-site kit | **Kit** | *pending first run* | — |
+| [monarda](https://github.com/lentago/monarda) — campaign-site kit | **Kit** | [2026-10-12, 3 min 01 s](https://github.com/lentago/monarda/blob/main/receipts/2026-10-12-agent-run.md) | — |
 | [kalmia](https://github.com/lentago/kalmia) — Ansible workstation layer | **Kit** | *pending* | — (the Proxmox layer below is a separate unit) |
 | [osmunda](https://github.com/lentago/osmunda) — ephemeral cluster drills | **Kit** | exercised, timings recorded upstream | Move drill credentials off an operator IAM user to a role |
 | [lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) | **Kit** | *pending* | — |
