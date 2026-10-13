@@ -149,17 +149,28 @@ def check_page(root, page, column, require, parts, failures):
                             f"the canonical list in {CANONICAL}")
 
 
-def column_tiers(root, page, column, tier_col):
-    """Return [(row_label, {part keys}, leading tier word)] for a page's tables."""
+def column_tiers(root, page, column, tier_col, failures):
+    """Return [(row_label, {part keys}, leading tier word)] for a page's tables.
+
+    A table that has the product column but no tier column, and a row too
+    short to hold its tier cell, are reported in `failures` rather than
+    skipped: missing data must fail the check, not pass it.
+    """
     with open(os.path.join(root, page), encoding="utf-8") as fh:
         lines = fh.read().splitlines()
     out = []
     for header, rows in tables(lines):
-        if column not in header or tier_col not in header:
+        if column not in header:
+            continue
+        if tier_col not in header:
+            failures.append(f"{page}: a table with a {column!r} column has no "
+                            f"{tier_col!r} column")
             continue
         ci, ti = header.index(column), header.index(tier_col)
         for cells in rows:
             if max(ci, ti) >= len(cells):
+                failures.append(f"{page}: row {cells[0][:60]!r} has no "
+                                f"{tier_col!r} cell")
                 continue
             keys = {part_key(u) for u in LINK_RE.findall(cells[ci])} - {None}
             word = re.sub(r"[*_`]", "", cells[ti]).split(None, 1)
@@ -168,11 +179,12 @@ def column_tiers(root, page, column, tier_col):
 
 
 def check_tiers(root, parts, failures):
+    """Fail each picker row whose Tier is not one the registry gives that part."""
     registry = {}  # key -> set of tiers the registry gives that part
-    for _, keys, tier in column_tiers(root, REGISTRY, "Product", "Tier"):
+    for _, keys, tier in column_tiers(root, REGISTRY, "Product", "Tier", failures):
         for key in keys & parts.keys():
             registry.setdefault(key, set()).add(tier)
-    for label, keys, tier in column_tiers(root, PICKER, "Adopt", "Tier"):
+    for label, keys, tier in column_tiers(root, PICKER, "Adopt", "Tier", failures):
         for key in sorted(keys & registry.keys()):
             if tier not in registry[key]:
                 allowed = " or ".join(sorted(registry[key]))
