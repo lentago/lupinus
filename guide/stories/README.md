@@ -64,7 +64,7 @@ The guide is the spine, not a product: [asclepias](https://github.com/lentago/as
 
 Each product, the *part*, sits under exactly one promise. Its name is a codename (a plant's Latin name, the way every product here is named); its role says what it does in plain words. The tier, meaning how much of it you can stand up from the repository alone, lives only in the [tier registry](../tiers.md).
 
-This table is the canonical product list. The [picker](../picker.md), the [tier registry](../tiers.md) and the [runbook index](../runbook-index.md) are checked against it on every pull request by [`ci/check_product_list.py`](../../ci/check_product_list.py): a product those pages name must be on this list, and every part under a promise must have a row in the tier registry. A new product starts here.
+This table is the canonical product list. The [picker](../picker.md), the [tier registry](../tiers.md) and the [runbook index](../runbook-index.md) are checked against it on every pull request by [`ci/check_product_list.py`](../../ci/check_product_list.py): a product those pages name must be on this list, and every part under a promise must have a row in the tier registry, and the tier on each picker row must be one the registry gives that part. A new product starts here.
 
 <!-- parts:start -->
 | Promise | Part | Role | Where it lives |
