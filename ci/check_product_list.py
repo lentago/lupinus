@@ -7,10 +7,20 @@ and links to where it lives; the link is the part's identity.
 
 Three guide pages enumerate products. Each is checked against the list:
 
-  guide/picker.md         every product it names is on the list
+  guide/picker.md         every product it names is on the list, and each
+                          row's Tier value is one the tier registry gives
+                          that part
   guide/runbook-index.md  every product it names is on the list (a subset by design)
   guide/tiers.md          the above, and every part has a row, except the
                           guide's own spine rows, which are not tiered
+
+The picker's Tier values are compared with the registry, which is the side
+that is right: guide/tiers.md is the only place a part's tier is asserted.
+Rows are matched on the part's lentago link alone. A part with two registry
+rows (kalmia, drosera, osmunda) is allowed either of their tiers; the scope
+text in the row is not compared. Only the leading word of the picker's Tier
+cell counts (a parenthetical after it is ignored), and the registry's bold
+markup is stripped.
 
 support/README.md is not checked: `support/` is the adopter's to edit, and a
 copy of this guide must not fail its own CI over rows its owner trimmed.
@@ -43,6 +53,8 @@ PAGES = {
     "guide/runbook-index.md": ("Runbook", "none"),
     "guide/tiers.md": ("Product", "promises"),
 }
+
+PICKER, REGISTRY = "guide/picker.md", "guide/tiers.md"
 
 LINK_RE = re.compile(r"\]\((https://github\.com/lentago/[^)\s]+)\)")
 
@@ -137,7 +149,57 @@ def check_page(root, page, column, require, parts, failures):
                             f"the canonical list in {CANONICAL}")
 
 
+def column_tiers(root, page, column, tier_col, failures):
+    """Return [(row_label, {part keys}, leading tier word)] for a page's tables.
+
+    A table that has the product column but no tier column, a row too short
+    to hold its tier cell, and an empty tier cell are reported in `failures`
+    rather than skipped: missing data must fail the check, not pass it.
+    """
+    with open(os.path.join(root, page), encoding="utf-8") as fh:
+        lines = fh.read().splitlines()
+    out = []
+    for header, rows in tables(lines):
+        if column not in header:
+            continue
+        if tier_col not in header:
+            failures.append(f"{page}: a table with a {column!r} column has no "
+                            f"{tier_col!r} column")
+            continue
+        ci, ti = header.index(column), header.index(tier_col)
+        for cells in rows:
+            if max(ci, ti) >= len(cells):
+                failures.append(f"{page}: row {cells[0][:60]!r} has no "
+                                f"{tier_col!r} cell")
+                continue
+            keys = {part_key(u) for u in LINK_RE.findall(cells[ci])} - {None}
+            word = re.sub(r"[*_`]", "", cells[ti]).split(None, 1)
+            if not word:
+                failures.append(f"{page}: row {cells[0][:60]!r} has an empty "
+                                f"{tier_col!r} cell")
+                continue
+            out.append((cells[0][:60], keys, word[0]))
+    return out
+
+
+def check_tiers(root, parts, failures):
+    """Fail each picker row whose Tier is not one the registry gives that part."""
+    registry = {}  # key -> set of tiers the registry gives that part
+    for _, keys, tier in column_tiers(root, REGISTRY, "Product", "Tier", failures):
+        for key in keys & parts.keys():
+            registry.setdefault(key, set()).add(tier)
+    for label, keys, tier in column_tiers(root, PICKER, "Adopt", "Tier", failures):
+        for key in sorted(keys & registry.keys()):
+            if tier not in registry[key]:
+                allowed = " or ".join(sorted(registry[key]))
+                failures.append(
+                    f"{PICKER}: row {label!r} says {key} is {tier!r}, but "
+                    f"{REGISTRY} gives it {allowed}; the registry is right, "
+                    "so fix the picker")
+
+
 def main(argv=None):
+    """Run every page check and report all disagreements in one go."""
     ap = argparse.ArgumentParser(description="Check product tables against the canonical list.")
     ap.add_argument("--root", default=".", help="Repo root (default: .)")
     args = ap.parse_args(argv)
@@ -146,6 +208,7 @@ def main(argv=None):
     failures = []
     for page, (column, require) in PAGES.items():
         check_page(args.root, page, column, require, parts, failures)
+    check_tiers(args.root, parts, failures)
 
     print(f"product-list: {len(parts)} part(s) on the canonical list, "
           f"{len(PAGES)} page(s) checked")
