@@ -152,9 +152,9 @@ def check_page(root, page, column, require, parts, failures):
 def column_tiers(root, page, column, tier_col, failures):
     """Return [(row_label, {part keys}, leading tier word)] for a page's tables.
 
-    A table that has the product column but no tier column, and a row too
-    short to hold its tier cell, are reported in `failures` rather than
-    skipped: missing data must fail the check, not pass it.
+    A table that has the product column but no tier column, a row too short
+    to hold its tier cell, and an empty tier cell are reported in `failures`
+    rather than skipped: missing data must fail the check, not pass it.
     """
     with open(os.path.join(root, page), encoding="utf-8") as fh:
         lines = fh.read().splitlines()
@@ -174,7 +174,11 @@ def column_tiers(root, page, column, tier_col, failures):
                 continue
             keys = {part_key(u) for u in LINK_RE.findall(cells[ci])} - {None}
             word = re.sub(r"[*_`]", "", cells[ti]).split(None, 1)
-            out.append((cells[0][:60], keys, word[0] if word else ""))
+            if not word:
+                failures.append(f"{page}: row {cells[0][:60]!r} has an empty "
+                                f"{tier_col!r} cell")
+                continue
+            out.append((cells[0][:60], keys, word[0]))
     return out
 
 
@@ -195,6 +199,7 @@ def check_tiers(root, parts, failures):
 
 
 def main(argv=None):
+    """Run every page check and report all disagreements in one go."""
     ap = argparse.ArgumentParser(description="Check product tables against the canonical list.")
     ap.add_argument("--root", default=".", help="Repo root (default: .)")
     args = ap.parse_args(argv)
