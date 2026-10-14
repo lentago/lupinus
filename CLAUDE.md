@@ -64,8 +64,9 @@ amends the two-audiences premise in
   Obsidian. It is load-bearing, not style
   ([ADR-0002](docs/adr/0002-guide-repo-is-the-vault-template.md)).
 - **Every file must read correctly in an adopter's copy.** Same rule monarda
-  carries. No "our homelab", no internal issue shorthand, no assumption the
-  reader has org membership. Write for someone who has never met us.
+  carries. No "our homelab" or "the lab" (the on-prem half of the estate is
+  *on-prem*), no internal issue shorthand, no assumption the reader has org
+  membership. Write for someone who has never met us.
 - **`guide/` is read-only in adopter copies.** Anything that expects local edits
   belongs in `estate/`, `journal/`, or `support/` instead — otherwise the
   refresh path breaks.
