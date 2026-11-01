@@ -32,13 +32,13 @@ uses. Each row keeps the need in your words.
 
 | …do this | Adopt | Runs on | Cost/month | Tier |
 |---|---|---|---|---|
-| **Set up a working laptop or VM** for whoever does your ops — same tools every time | [kalmia](https://github.com/lentago/kalmia) (the Ansible layer only) | Any Linux machine you already have | **$0** | Kit |
+| **Set up a working laptop or VM** for whoever does your ops — same tools every time | [kalmia](https://github.com/lentago/kalmia) (the Ansible layer only) | Any Linux machine you already have | **$0** | Kit (provisional) |
 
 ## Your alarms and status
 
 | …do this | Adopt | Runs on | Cost/month | Tier |
 |---|---|---|---|---|
-| **Publish a status page** your staff and community can check | [drosera](https://github.com/lentago/drosera) (`status-page/`) | Your GitHub Pages | **$0** | Kit |
+| **Publish a status page** your staff and community can check | [drosera](https://github.com/lentago/drosera) (`status-page/`) | Your GitHub Pages | **$0** | Kit (provisional) |
 | **See your servers and services** — dashboards, alerts, log search — without buying a monitoring product | [drosera](https://github.com/lentago/drosera) (full stack) | Your Grafana Cloud free tier | **$0** on the free tier | Pattern |
 | **Capture and keep logs** from a firewall or cloud service for longer than the vendor keeps them | [betula](https://github.com/lentago/betula) | Your log destination + the source device | Varies by destination | Pattern |
 
@@ -52,7 +52,7 @@ says what is still missing.
 
 | …do this | Adopt | Runs on | Cost/month | Tier |
 |---|---|---|---|---|
-| **Audit what you would lose** if a vendor disappeared, and prove your exits work | [the lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) | Nothing — it is a review you run | **$0** | Kit |
+| **Audit what you would lose** if a vendor disappeared, and prove your exits work | [the lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) | Nothing — it is a review you run | **$0** | Kit (provisional) |
 
 For keeping logs from a firewall or cloud service, see the log-capture row under
 [your alarms and status](#your-alarms-and-status).
@@ -72,7 +72,7 @@ You may not need these three yet. Skip them until you need one.
 
 | …do this | Adopt | Runs on | Cost/month | Tier |
 |---|---|---|---|---|
-| **Run a real AWS environment** you own: private networking, containers, a managed database, backups, alarms, budgets | [solidago](https://github.com/lentago/solidago) | Your AWS account + a domain you register | **~$130** ([teardown](https://github.com/lentago/solidago/blob/main/docs/RUNBOOK.md) drops it to ~$40) | Platform |
+| **Run a real AWS environment** you own: private networking, containers, a managed database, backups, alarms, budgets | [solidago](https://github.com/lentago/solidago) | Your AWS account + a domain you register | **~$130** ([teardown](https://github.com/lentago/solidago/blob/main/docs/RUNBOOK.md) drops it to ~$40) | Platform (provisional) |
 | **Spin up a temporary Kubernetes cluster** for a specific job and destroy it the same day | [osmunda](https://github.com/lentago/osmunda) (`runbooks/`) | Your AWS account | **~$0.15/hour, while it exists** | Kit |
 
 ### AI with receipts
@@ -88,7 +88,7 @@ repositories consistent.
 
 | …do this | Adopt | Runs on | Cost/month | Tier |
 |---|---|---|---|---|
-| **Standardize your own repositories** — one CI definition, consistent settings | [shared-workflows](https://github.com/lentago/shared-workflows) + [repo-template](https://github.com/lentago/repo-template) | GitHub | **$0** | Platform |
+| **Standardize your own repositories** — one CI definition, consistent settings | [shared-workflows](https://github.com/lentago/shared-workflows) + [repo-template](https://github.com/lentago/repo-template) | GitHub | **$0** | Platform (provisional) |
 
 ## Reading the tier column
 
@@ -99,6 +99,10 @@ repositories consistent.
 - **Pattern** — read it, lift the parts you need, but do not try to stand it up
   whole. These are real systems built for one estate; what transfers is the
   approach, and each one says plainly what is worth taking.
+
+A tier marked *(provisional)* is a target the registry has not yet earned: the
+receipt is still pending. See [readiness](tiers.md#readiness) for what each
+stage means.
 
 A Pattern is not a lesser product — it's an honest label. Several are the most
 interesting systems in the suite. They're simply not packaged for a stranger
