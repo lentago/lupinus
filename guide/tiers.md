@@ -40,9 +40,11 @@ caveats: the first-time human duration is unrecorded, some checks were only
 partly exercised, one validation failed and an admin bypass was used, and no
 attachment test was run. The first human-drilled receipt is the next step.
 
-**Design note.** A one-person organization has no second eligible reviewer, so
-the solo-operator review path is an explicit choice to document in each kit's
-`ADOPTION.md`.
+**Design note.** A one-person organization has no second eligible reviewer. The
+solo-operator review path, in which the operator opens the pull request, waits
+for the automated review, triages its findings and merges their own change, is
+an explicit choice rather than a gap. Each kit's `ADOPTION.md` is to say that it
+takes this path and what the automated review does and does not catch.
 
 ## Where each product stands
 
@@ -50,11 +52,11 @@ the solo-operator review path is an explicit choice to document in each kit's
 |---|---|---|---|---|
 | [monarda](https://github.com/lentago/monarda) — campaign-site kit | **Kit** | agent-drilled | [2026-10-12, 3 min 01 s](https://github.com/lentago/monarda/blob/main/receipts/2026-10-12-agent-run.md) | — |
 | [uvularia](https://github.com/lentago/uvularia) — records vault and "Is it posted?" board, rung 1 (one repository) | **Kit** | agent-drilled | [2026-10-12, 6 min 09 s](https://github.com/lentago/uvularia/blob/main/receipts/2026-10-12-agent-run-rung1.md) | — (rungs 2 to 4 are in [its ladder](https://github.com/lentago/uvularia/blob/main/ADOPTION.md)) |
-| [kalmia](https://github.com/lentago/kalmia) — Ansible workstation layer | **Kit (provisional)** | built | *pending* | — (the Proxmox layer below is a separate unit) |
-| [osmunda](https://github.com/lentago/osmunda) — ephemeral cluster drills | **Kit** | built | exercised, timings recorded upstream | Move drill credentials off an operator IAM user to a role |
+| [kalmia](https://github.com/lentago/kalmia) — Ansible workstation layer | **Kit (provisional)** | built | *pending* ([kalmia#231](https://github.com/lentago/kalmia/issues/231)) | — (the Proxmox layer below is a separate unit) |
+| [osmunda](https://github.com/lentago/osmunda) — ephemeral cluster drills | **Kit (provisional)** | built | exercised, timings recorded upstream, no receipt linked | Link the recorded timings as a receipt under `receipts/`; move drill credentials off an operator IAM user to a role |
 | [lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) | **Kit (provisional)** | built | *pending* | — |
 | [drosera](https://github.com/lentago/drosera) — status page | **Kit (provisional)** | built | *pending* | Worked example wired to a Pages target |
-| [solidago](https://github.com/lentago/solidago) — AWS platform | **Platform (provisional)** | built | *pending* | Scripted identity-provider bootstrap; the standing plan noise in [solidago#184](https://github.com/lentago/solidago/issues/184) |
+| [solidago](https://github.com/lentago/solidago) — AWS platform | **Platform (provisional)** | built | *pending* ([solidago#233](https://github.com/lentago/solidago/issues/233)) | Scripted identity-provider bootstrap; the standing plan noise in [solidago#184](https://github.com/lentago/solidago/issues/184) |
 | [shared-workflows](https://github.com/lentago/shared-workflows) + [repo-template](https://github.com/lentago/repo-template) | **Platform (provisional)** | built | *pending* | An adopter guide for fork-and-repin vs. vendoring |
 | [drosera](https://github.com/lentago/drosera) — full observability stack | **Pattern** | — | — | An "adopt into your own stack" document; a collector config with our addresses removed; the multi-client work in [drosera#131](https://github.com/lentago/drosera/issues/131) |
 | [betula](https://github.com/lentago/betula) — log capture | **Pattern** | — | — | The core/client split in [betula#74](https://github.com/lentago/betula/issues/74), which makes our firewall one client among several rather than the product |
