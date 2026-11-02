@@ -27,10 +27,14 @@
 # Deliberately NOT path-filtered, and no draft skip: a required check that
 # never reports deadlocks the PR.
 #
-# The script is checked out from the PR's BASE commit, never the PR head, so a
-# pull request cannot edit the script that judges it. A PR that adds the script
-# for the first time therefore fails this check (the base has no script yet);
-# that is expected, and there is deliberately no fallback to the PR's own copy.
+# The script is checked out from the PR's BASE branch (`base.ref`, the base
+# branch's current tip), never the PR head, so a pull request cannot edit the
+# script that judges it. It is not `base.sha`: that is frozen at the PR's last
+# update, so a PR opened before the gate merged would find no script at its
+# base commit and fail closed even after a human approved the head. The base
+# branch tip is the one commit a PR cannot edit. A PR that adds the script for
+# the first time therefore fails this check (the base has no script yet); that
+# is expected, and there is deliberately no fallback to the PR's own copy.
 # ============================================================================
 
 name: agent-pr-gate
@@ -74,11 +78,11 @@ jobs:
             echo "gated=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Checkout agent-pr-gate script from the base commit
+      - name: Checkout agent-pr-gate script from the base branch
         if: steps.who.outputs.gated == 'true'
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ github.event.pull_request.base.sha }}
+          ref: ${{ github.event.pull_request.base.ref }}
           path: .agent-pr-gate-tooling
           sparse-checkout: ci
           fetch-depth: 1
