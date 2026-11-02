@@ -19,26 +19,53 @@ otherwise.
 | **Platform** | Adoptable with about a day's work and your own accounts | `ADOPTION.md` complete · swap list short and mechanical · receipt recorded |
 | **Pattern** | Read it, lift pieces, do not stand it up whole | Honest "what to lift" note · swap list explaining why, each row tracked or explicitly not planned |
 
+## Readiness
+
+The tier says what a product is meant to be. Readiness says how much of that has
+been shown. Three words, used in the table below:
+
+- **built**: the path exists in the repository, and no drill has been recorded.
+- **agent-drilled**: a timed agent run with a receipt, caveats visible.
+- **human-drilled**: a human who did not write the guide completed it without
+  coaching, timed end to end.
+
+A tier marked *(provisional)* is a target the registry has not yet earned: the
+row says Kit or Platform, but its receipt is still pending, so it does not yet
+meet the definition above. It stays on the page so you can see where we are
+headed; treat it as built, not as proven. Pattern rows carry a dash, since
+nothing there is meant to be stood up whole.
+
+The two recorded receipts, monarda and uvularia rung 1, are agent runs with
+caveats: the first-time human duration is unrecorded, some checks were only
+partly exercised, one validation failed and an admin bypass was used, and no
+attachment test was run. The first human-drilled receipt is the next step.
+
+**Design note.** A one-person organization has no second eligible reviewer. The
+solo-operator review path, in which the operator opens the pull request, waits
+for the automated review, triages its findings and merges their own change, is
+an explicit choice rather than a gap. Each kit's `ADOPTION.md` is to say that it
+takes this path and what the automated review does and does not catch.
+
 ## Where each product stands
 
-| Product | Tier | Receipt | What would move it up |
-|---|---|---|---|
-| [monarda](https://github.com/lentago/monarda) — campaign-site kit | **Kit** | [2026-10-12, 3 min 01 s](https://github.com/lentago/monarda/blob/main/receipts/2026-10-12-agent-run.md) | — |
-| [uvularia](https://github.com/lentago/uvularia) — records vault and "Is it posted?" board, rung 1 (one repository) | **Kit** | [2026-10-12, 6 min 09 s](https://github.com/lentago/uvularia/blob/main/receipts/2026-10-12-agent-run-rung1.md) | — (rungs 2 to 4 are in [its ladder](https://github.com/lentago/uvularia/blob/main/ADOPTION.md)) |
-| [kalmia](https://github.com/lentago/kalmia) — Ansible workstation layer | **Kit** | *pending* | — (the Proxmox layer below is a separate unit) |
-| [osmunda](https://github.com/lentago/osmunda) — ephemeral cluster drills | **Kit** | exercised, timings recorded upstream | Move drill credentials off an operator IAM user to a role |
-| [lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) | **Kit** | *pending* | — |
-| [drosera](https://github.com/lentago/drosera) — status page | **Kit** | *pending* | Worked example wired to a Pages target |
-| [solidago](https://github.com/lentago/solidago) — AWS platform | **Platform** | *pending* | Scripted identity-provider bootstrap; the standing plan noise in [solidago#184](https://github.com/lentago/solidago/issues/184) |
-| [shared-workflows](https://github.com/lentago/shared-workflows) + [repo-template](https://github.com/lentago/repo-template) | **Platform** | *pending* | An adopter guide for fork-and-repin vs. vendoring |
-| [drosera](https://github.com/lentago/drosera) — full observability stack | **Pattern** | — | An "adopt into your own stack" document; a collector config with our addresses removed; the multi-client work in [drosera#131](https://github.com/lentago/drosera/issues/131) |
-| [betula](https://github.com/lentago/betula) — log capture | **Pattern** | — | The core/client split in [betula#74](https://github.com/lentago/betula/issues/74), which makes our firewall one client among several rather than the product |
-| [epigaea](https://github.com/lentago/epigaea) — physical-world telemetry | **Pattern** | — | Separating the reusable deploy mechanism from the one building it describes |
-| [osmunda](https://github.com/lentago/osmunda) — Kubernetes platform | **Pattern** | — | The cluster-install gap in [osmunda#4](https://github.com/lentago/osmunda/issues/4) |
-| [claytonia](https://github.com/lentago/claytonia) — agent fleet | **Pattern** | — | A zero-to-first-job install path; the platform seam in [claytonia#47](https://github.com/lentago/claytonia/issues/47) |
-| [kalmia](https://github.com/lentago/kalmia) — Proxmox guest layer | **Pattern** | — | It has no variables at all today — it is a record of one cluster, not a tool for building one |
-| [brasenia](https://github.com/lentago/brasenia) — shared viewport | **Pattern** | — | A runtime you can stand up without copying how our hosts are laid out. The compositor (the program that decides which pane the screen shows), the focus producer (a pane that follows whatever repository is being worked on), the `pane` command (how a job claims the screen) and two display clients (Roku, Chromecast) run today, but on our own host ([ADR-0008](https://github.com/lentago/brasenia/blob/main/docs/adr/0008-compositor-and-producers-on-pub.md)); tracked: the runtime rename in [kalmia#63](https://github.com/lentago/kalmia/issues/63) and the lobby-pane variant in [brasenia#41](https://github.com/lentago/brasenia/issues/41) |
-| [mitchella](https://github.com/lentago/mitchella) — front desk | **Pattern** | — | Its engine already runs as uvularia's Ask box, rung 3 of [uvularia's ladder](https://github.com/lentago/uvularia/blob/main/ADOPTION.md): a deliberately small front desk that answers only from published records, and the first place the engine runs for real ([uvularia#34](https://github.com/lentago/uvularia/issues/34)). mitchella's own desk needs two more things: its first milestone's receipt, a first live answer through one of its own front ends (a person-facing way to ask it a question, such as Slack or the command line) ([M1](https://github.com/lentago/mitchella/milestone/1), [mitchella#1](https://github.com/lentago/mitchella/issues/1)), and its second milestone, the ability to file a ticket on your behalf ([M2](https://github.com/lentago/mitchella/milestone/2), [mitchella#4](https://github.com/lentago/mitchella/issues/4) to [#8](https://github.com/lentago/mitchella/issues/8)) |
+| Product | Tier | Readiness | Receipt | What would move it up |
+|---|---|---|---|---|
+| [monarda](https://github.com/lentago/monarda) — campaign-site kit | **Kit** | agent-drilled | [2026-10-12, 3 min 01 s](https://github.com/lentago/monarda/blob/main/receipts/2026-10-12-agent-run.md) | — |
+| [uvularia](https://github.com/lentago/uvularia) — records vault and "Is it posted?" board, rung 1 (one repository) | **Kit** | agent-drilled | [2026-10-12, 6 min 09 s](https://github.com/lentago/uvularia/blob/main/receipts/2026-10-12-agent-run-rung1.md) | — (rungs 2 to 4 are in [its ladder](https://github.com/lentago/uvularia/blob/main/ADOPTION.md)) |
+| [kalmia](https://github.com/lentago/kalmia) — Ansible workstation layer | **Kit (provisional)** | built | *pending* ([kalmia#231](https://github.com/lentago/kalmia/issues/231)) | — (the Proxmox layer below is a separate unit) |
+| [osmunda](https://github.com/lentago/osmunda) — ephemeral cluster drills | **Kit (provisional)** | built | exercised, timings recorded upstream, no receipt linked | Link the recorded timings as a receipt under `receipts/`; move drill credentials off an operator IAM user to a role |
+| [lock-in ledger](https://github.com/lentago/.github/tree/main/fleet-reports/lock-in) | **Kit (provisional)** | built | *pending* | — |
+| [drosera](https://github.com/lentago/drosera) — status page | **Kit (provisional)** | built | *pending* | Worked example wired to a Pages target |
+| [solidago](https://github.com/lentago/solidago) — AWS platform | **Platform (provisional)** | built | *pending* ([solidago#233](https://github.com/lentago/solidago/issues/233)) | Scripted identity-provider bootstrap; the standing plan noise in [solidago#184](https://github.com/lentago/solidago/issues/184) |
+| [shared-workflows](https://github.com/lentago/shared-workflows) + [repo-template](https://github.com/lentago/repo-template) | **Platform (provisional)** | built | *pending* | An adopter guide for fork-and-repin vs. vendoring |
+| [drosera](https://github.com/lentago/drosera) — full observability stack | **Pattern** | — | — | An "adopt into your own stack" document; a collector config with our addresses removed; the multi-client work in [drosera#131](https://github.com/lentago/drosera/issues/131) |
+| [betula](https://github.com/lentago/betula) — log capture | **Pattern** | — | — | The core/client split in [betula#74](https://github.com/lentago/betula/issues/74), which makes our firewall one client among several rather than the product |
+| [epigaea](https://github.com/lentago/epigaea) — physical-world telemetry | **Pattern** | — | — | Separating the reusable deploy mechanism from the one building it describes |
+| [osmunda](https://github.com/lentago/osmunda) — Kubernetes platform | **Pattern** | — | — | The cluster-install gap in [osmunda#4](https://github.com/lentago/osmunda/issues/4) |
+| [claytonia](https://github.com/lentago/claytonia) — agent fleet | **Pattern** | — | — | A zero-to-first-job install path; the platform seam in [claytonia#47](https://github.com/lentago/claytonia/issues/47) |
+| [kalmia](https://github.com/lentago/kalmia) — Proxmox guest layer | **Pattern** | — | — | It has no variables at all today — it is a record of one cluster, not a tool for building one |
+| [brasenia](https://github.com/lentago/brasenia) — shared viewport | **Pattern** | — | — | A runtime you can stand up without copying how our hosts are laid out. The compositor (the program that decides which pane the screen shows), the focus producer (a pane that follows whatever repository is being worked on), the `pane` command (how a job claims the screen) and two display clients (Roku, Chromecast) run today, but on our own host ([ADR-0008](https://github.com/lentago/brasenia/blob/main/docs/adr/0008-compositor-and-producers-on-pub.md)); tracked: the runtime rename in [kalmia#63](https://github.com/lentago/kalmia/issues/63) and the lobby-pane variant in [brasenia#41](https://github.com/lentago/brasenia/issues/41) |
+| [mitchella](https://github.com/lentago/mitchella) — front desk | **Pattern** | — | — | Its engine already runs as uvularia's Ask box, rung 3 of [uvularia's ladder](https://github.com/lentago/uvularia/blob/main/ADOPTION.md): a deliberately small front desk that answers only from published records, and the first place the engine runs for real ([uvularia#34](https://github.com/lentago/uvularia/issues/34)). mitchella's own desk needs two more things: its first milestone's receipt, a first live answer through one of its own front ends (a person-facing way to ask it a question, such as Slack or the command line) ([M1](https://github.com/lentago/mitchella/milestone/1), [mitchella#1](https://github.com/lentago/mitchella/issues/1)), and its second milestone, the ability to file a ticket on your behalf ([M2](https://github.com/lentago/mitchella/milestone/2), [mitchella#4](https://github.com/lentago/mitchella/issues/4) to [#8](https://github.com/lentago/mitchella/issues/8)) |
 ## How this page stays honest
 
 Three rules, borrowed from how the suite handles renames — where "we will just
