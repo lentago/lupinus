@@ -36,9 +36,10 @@ headed; treat it as built, not as proven. Pattern rows carry a dash, since
 nothing there is meant to be stood up whole.
 
 The three recorded receipts, monarda rungs 1 and 2 and uvularia rung 1, are
-agent runs with caveats: the first-time human duration is unrecorded, some checks were only
-partly exercised, one validation failed and an admin bypass was used, and no
-attachment test was run. The first human-drilled receipt is the next step.
+agent runs with caveats. On all three, the first-time human duration is
+unrecorded and some checks were only partly exercised. On uvularia's, one
+validation failed, an admin bypass was used, and no attachment test was run.
+The first human-drilled receipt is the next step.
 
 **Design note.** A one-person organization has no second eligible reviewer. The
 solo-operator review path, in which the operator opens the pull request, waits
