@@ -1,6 +1,9 @@
 <!-- TEMPLATE. Copy to the root of a product repo as ADOPTION.md and fill in.
-     Delete every instruction comment as you go. The shape is fixed — see
-     lupinus/docs/adr/0003-drill-and-receipt.md for why each section exists. -->
+     Delete every instruction comment as you go. The section order is fixed —
+     see lupinus/docs/adr/0003-drill-and-receipt.md for why each section
+     exists. The Intake and the drill may each move to a file of their own
+     (INTAKE.md, DRY-RUN.md); their headings stay here either way. When to
+     split: lupinus/templates/README.md, "One file or three". -->
 
 # Adopting <product>
 
@@ -49,7 +52,20 @@ never run — see [Receipt](#receipt)>
 
 <!-- Every value the adopter must supply. The third column is the point: it
      names the exact field, variable, or secret the answer becomes, so filling
-     in configuration is mechanical rather than interpretive. -->
+     in configuration is mechanical rather than interpretive.
+
+     SPLIT OPTION: if the intake is a questionnaire answered before the drill
+     starts, move the table (third column and all) to INTAKE.md, keep this
+     heading, and replace the table with the paragraph monarda uses, with your
+     config file's name in it:
+
+     ```markdown
+     Complete [`INTAKE.md`](INTAKE.md). It is a one-page questionnaire —
+     every question maps directly to a field in `<your config file>` or to a
+     one-time setup step. When `INTAKE.md` is fully filled in, the rest of
+     the drill is mechanical.
+     ```
+-->
 
 | Question | Your answer | Maps to |
 |---|---|---|
@@ -78,7 +94,22 @@ never run — see [Receipt](#receipt)>
      - One action per step.
      - Every step has a falsifiable "check it's green".
      - LOCAL FIRST: everything verifiable offline comes before anything that
-       touches a deploy target, costs money, or is hard to undo. -->
+       touches a deploy target, costs money, or is hard to undo.
+
+     SPLIT OPTION: if the drill has its own clock (a time at every
+     checkpoint, its own receipt table, or more than one drill), move the
+     steps to DRY-RUN.md, keep this heading, and replace the table with this
+     paragraph, adapted from monarda's:
+
+     ```markdown
+     The full <N>-step drill — from a completed `INTAKE.md` (or the Intake
+     above) to <the working thing> on your account — lives in
+     [`DRY-RUN.md`](DRY-RUN.md). Follow it in order. Every step has a check:
+     something concrete you can confirm before moving to the next one.
+     ```
+
+     The same rules apply inside DRY-RUN.md. Keep the "If a check does not go
+     green" line below either way. -->
 
 | # | Step | Check it's green | ✅ |
 |---|---|---|---|
@@ -97,7 +128,9 @@ worked. See [Troubleshooting](#troubleshooting).
 
 <!-- Filled in by whoever runs the drill. A blank table means UNEXERCISED, and
      the status line at the top must say so. Don't delete this section to tidy
-     it up — an empty receipt is information, and it's honest. -->
+     it up — an empty receipt is information, and it's honest.
+     If the drill lives in DRY-RUN.md, this table stays here as the summary;
+     the time at each checkpoint is recorded in DRY-RUN.md. -->
 
 | Field | Value |
 |---|---|
