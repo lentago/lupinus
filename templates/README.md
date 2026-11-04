@@ -33,12 +33,12 @@ is built that way.
 
 Move either one into a file of its own when it has a life of its own:
 
-- **The intake is answered before anyone starts.** It's a questionnaire filled
-  in ahead of time, often by the person the product is for rather than the one
-  setting it up, and it's long enough to need sections. Put it in `INTAKE.md`.
-- **The drill has its own clock.** It records a time at every checkpoint and
-  has a receipt table of its own, or there's more than one drill, each timed
-  separately. Put it in `DRY-RUN.md`.
+- **The intake is answered before the drill starts.** It's a questionnaire
+  filled in ahead of time, often by the person the product is for rather than
+  the one setting it up. Put it in `INTAKE.md`.
+- **The drill has its own clock.** Any one of these is enough: it records a
+  time at every checkpoint, it has a receipt table of its own, or there's more
+  than one drill. Put it in `DRY-RUN.md`.
 
 [monarda's runbook](https://github.com/lentago/monarda/blob/main/ADOPTION.md)
 splits both. It's the one [your first kit](../guide/first-kit.md) walks you
@@ -47,11 +47,12 @@ through, so it's the shape most adopters see first.
 > **Heads up.** A split moves the *content* of `## Intake` or `## The drill`,
 > never the heading. Keep every section of `ADOPTION.md`, in the template's
 > order, and under a moved section leave one short paragraph that says where
-> the content went and what "done" looks like. That's what keeps
-> [ADR-0003](../docs/adr/0003-drill-and-receipt.md)'s promise: someone who has
-> learned to read one runbook can find their way around all of them.
+> the content went and what "done" looks like. That keeps every runbook in the
+> standard shape [ADR-0003](../docs/adr/0003-drill-and-receipt.md) sets, so
+> someone who has learned to read one can find their way around all of them.
 
 The template's comments carry monarda's two paragraphs, ready to adapt. Copy
-them and swap in your own config file and finish line. The `## Receipt` section stays in
-`ADOPTION.md` either way, as the summary (date, elapsed time, slowest step,
-all-green); the time at each checkpoint stays with the drill.
+them and swap in your own config file and finish line. The `## Receipt`
+section stays in `ADOPTION.md` either way, as the summary (date, operator,
+elapsed time, slowest step, all-green); the time at each checkpoint stays with
+the drill.

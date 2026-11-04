@@ -96,8 +96,8 @@ never run — see [Receipt](#receipt)>
      - LOCAL FIRST: everything verifiable offline comes before anything that
        touches a deploy target, costs money, or is hard to undo.
 
-     SPLIT OPTION: if the drill has its own clock (a time at every
-     checkpoint, its own receipt table, or more than one drill), move the
+     SPLIT OPTION: if the drill has its own clock (any one of: a time at
+     every checkpoint, its own receipt table, or more than one drill), move the
      steps to DRY-RUN.md, keep this heading, and replace the table with this
      paragraph, adapted from monarda's:
 
