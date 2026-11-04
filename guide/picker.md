@@ -20,7 +20,7 @@ uses. Each row keeps the need in your words.
 
 | …do this | Adopt | Runs on | Cost/month | Tier |
 |---|---|---|---|---|
-| **Put up a campaign or fundraising site** my organization owns outright | [monarda](https://github.com/lentago/monarda) | Your GitHub Pages (or your S3/CloudFront) | **$0** on Pages | Kit |
+| **Put up a campaign or fundraising site** my organization owns outright, and grow it into our own small website: home, about, programs, events, donate, contact | [monarda](https://github.com/lentago/monarda) | Your GitHub Pages (or your S3/CloudFront) | **$0** on Pages | Kit |
 
 ## Your records and your proof
 

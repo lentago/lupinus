@@ -35,8 +35,8 @@ meet the definition above. It stays on the page so you can see where we are
 headed; treat it as built, not as proven. Pattern rows carry a dash, since
 nothing there is meant to be stood up whole.
 
-The two recorded receipts, monarda and uvularia rung 1, are agent runs with
-caveats: the first-time human duration is unrecorded, some checks were only
+The three recorded receipts, monarda rungs 1 and 2 and uvularia rung 1, are
+agent runs with caveats: the first-time human duration is unrecorded, some checks were only
 partly exercised, one validation failed and an admin bypass was used, and no
 attachment test was run. The first human-drilled receipt is the next step.
 
@@ -50,7 +50,7 @@ takes this path and what the automated review does and does not catch.
 
 | Product | Tier | Readiness | Receipt | What would move it up |
 |---|---|---|---|---|
-| [monarda](https://github.com/lentago/monarda) — campaign-site kit | **Kit** | agent-drilled | [2026-10-12, 3 min 01 s](https://github.com/lentago/monarda/blob/main/receipts/2026-10-12-agent-run.md) | — |
+| [monarda](https://github.com/lentago/monarda) — campaign-site kit, rung 1, and the plain organization site, rung 2 | **Kit** | agent-drilled | [2026-10-12, 3 min 01 s](https://github.com/lentago/monarda/blob/main/receipts/2026-10-12-agent-run.md) (rung 1); [2026-11-04, 5 min 03 s](https://github.com/lentago/monarda/blob/main/receipts/2026-11-04-agent-run-rung-2.md) (rung 2) | — |
 | [uvularia](https://github.com/lentago/uvularia) — records vault and "Is it posted?" board, rung 1 (one repository) | **Kit** | agent-drilled | [2026-10-12, 6 min 09 s](https://github.com/lentago/uvularia/blob/main/receipts/2026-10-12-agent-run-rung1.md) | — (rungs 2 to 4 are in [its ladder](https://github.com/lentago/uvularia/blob/main/ADOPTION.md)) |
 | [kalmia](https://github.com/lentago/kalmia) — Ansible workstation layer | **Kit (provisional)** | built | *pending* ([kalmia#231](https://github.com/lentago/kalmia/issues/231)) | — (the Proxmox layer below is a separate unit) |
 | [osmunda](https://github.com/lentago/osmunda) — ephemeral cluster drills | **Kit (provisional)** | built | exercised, timings recorded upstream, no receipt linked | Link the recorded timings as a receipt under `receipts/`; move drill credentials off an operator IAM user to a role |
